@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 const name = 'Lucas';
 export const siteTitle = "Larnicol Lucas Portfolio"
 
-export default function Layout({ children}) {
+export default function Layout({children}) {
     return (
       <div className={styles.container}>
         <Head>
@@ -28,7 +28,7 @@ export default function Layout({ children}) {
         <header>
 
         </header>
-        <main>
+        <main className={styles.reset}>
           {children}
         </main>
       </div>
