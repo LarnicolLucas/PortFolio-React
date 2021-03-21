@@ -2,13 +2,11 @@
     width: 100vw;
     height: 75vh;
     display: flex;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
 }
 .animeLogo{
 
-    border: 1px solid black;
     position: relative;
     width: 400px;
     height: 200px;
