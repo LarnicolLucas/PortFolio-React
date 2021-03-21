@@ -14,10 +14,10 @@ export default function nav_container(props){
                 <Col size="4">
                     <section>
                         <Row>
-                            <Col size="4">
+                            <Col size="6">
                                 <a>About</a>
                             </Col>
-                            <Col size="4">
+                            <Col size="6">
                                 <a>Contact</a>
                             </Col>
                         </Row>
