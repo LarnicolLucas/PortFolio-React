@@ -12,16 +12,14 @@ export default function nav_container(props){
                     </figure>
                 </Col>
                 <Col size="4">
-                    <section>
-                        <Row>
-                            <Col size="6">
-                                <a>About</a>
-                            </Col>
-                            <Col size="6">
-                                <a>Contact</a>
-                            </Col>
-                        </Row>
-                    </section>
+                    <Row reset={true}>
+                        <Col center={true} size="6">
+                            <a>About</a>
+                        </Col>
+                        <Col center={true} size="6">
+                            <a>Contact</a>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </nav>
