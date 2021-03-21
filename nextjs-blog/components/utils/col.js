@@ -1,4 +1,4 @@
-import stylesSass from './nav_container.module.sass'
+import stylesSass from './col_and_row.module.sass'
 
 export default function col(props){
     return <>
