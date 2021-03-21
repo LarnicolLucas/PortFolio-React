@@ -5,7 +5,7 @@ import Row from '../utils/row.js'
 export default function nav_container(props){
     return <>
         <nav>
-            <Row>
+            <Row reset={true}>
                 <Col size="8">
                     <figure>  
                         LOGO ICI

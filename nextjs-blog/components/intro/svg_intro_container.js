@@ -9,7 +9,7 @@ export default function containe_SVG() {
     const [posY, setPosY] = useState(0);
 
     const givePos = (e) => {
-        const convert = (value) => value/50
+        const convert = (value) => (value/50)
         const newPosX = convert(e.clientX);
         const newPosY = convert(e.clientY);
         setPosY(newPosY)
@@ -17,10 +17,12 @@ export default function containe_SVG() {
     }
 
     return(
-        <section onMouseMove={givePos} className={styles.containerIntro}>
-            <SVGIntro src="/images/left.svg" posX={posX} posY={posY}></SVGIntro>
-            <SVGIntro src="/images/right.svg" posX={-posX} posY={-posY}></SVGIntro>
-            <SVGIntro src="/images/slash.svg" posX={(-1.5) * posX} posY={1.7 * posY}></SVGIntro>
+        <section onMouseMove={givePos} className={styles.container}>
+            <figure className={styles.animeLogo}>
+                <SVGIntro src="/images/left.svg" posX={posX} posY={posY}></SVGIntro>
+                <SVGIntro src="/images/right.svg" posX={-posX} posY={-posY}></SVGIntro>
+                <SVGIntro src="/images/slash.svg" posX={(-1.5) * posX} posY={1.7 * posY}></SVGIntro>
+            </figure>
         </section>
     )
 
