@@ -2,6 +2,8 @@ import styles from './nav_container.module.css'
 import Col from '../utils/col.js'
 import Row from '../utils/row.js'
 
+import Link_nav from './nav_button.js'
+
 export default function nav_container(props){
     return <>
         <nav>
@@ -14,10 +16,10 @@ export default function nav_container(props){
                 <Col size="4">
                     <Row reset={true}>
                         <Col center={true} size="6">
-                            <a>About</a>
+                            <Link_nav titre="About"></Link_nav>
                         </Col>
                         <Col center={true} size="6">
-                            <a>Contact</a>
+                            <Link_nav titre="Contact"></Link_nav>
                         </Col>
                     </Row>
                 </Col>
