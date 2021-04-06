@@ -1,37 +1,39 @@
 import {useState, useEffect, useRef} from 'react'
 import styles from './pres.module.sass'
 import { gsap } from 'gsap'
+import Svg from '../intro/svg_intro.js'
 
 export default function pres(props){
 
-    const [scrollY, setScrollY] = useState(0);
-
     const elem = useRef();
 
-    const handleScroll = () => {
-
-        const rect_elem = elem.current.getBoundingClientRect()
-        const offset_in = 300;
-        const scroll_at_element = rect_elem.y < offset_in ? true : false;
-
-        const scrolPos = window.scrollY.toFixed(0);
-        const step = 40;
-        const pos = (scrolPos / step).toFixed(0)
-
-        let res = { pos: pos} ;
-        if(scroll_at_element) return gsap.to(res, {duration: 0.5, pos: res.pos * step, onUpdate: ()=> pos * step == scrollY ? null : setScrollY(res.pos)})
-        
+    const options_scroll_observer = {
+        root: null,
+        threshold: 0.5,
+        rootMargin: "0px"
     };
 
+    const anime = (el)=> gsap.to(el, {x: 100, duration: 1, ease: "elastic.out(1, 0.3)"});
+    const anime2 = (el)=> gsap.to(el, {x: 0, duration: 1});
+
+    const intersectionFunction = (entries, observer) => {
+        entries.forEach(el => {
+            if(el.intersectionRatio > options_scroll_observer.threshold) return anime(el.target)
+            return anime2(el.target)
+            
+        })
+    }
+
     useEffect( ()=> {
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => window.removeEventListener("scroll", handleScroll)
+        const observer = new IntersectionObserver(intersectionFunction, options_scroll_observer);
+        observer.observe(elem.current)
 
     });
+    
 
     return <>
-        <div ref={elem} className={styles.container}> {scrollY} </div>
+        <div ref={elem} className={styles.container}>
+            <Svg src="/images/me.svg" />
+        </div>
     </>
 }
