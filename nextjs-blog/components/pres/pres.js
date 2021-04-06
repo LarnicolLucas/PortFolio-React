@@ -13,13 +13,29 @@ export default function pres(props){
         rootMargin: "0px"
     };
 
-    const anime = (el)=> gsap.to(el, {x: 100, duration: 1, ease: "elastic.out(1, 0.3)"});
-    const anime2 = (el)=> gsap.to(el, {x: 0, duration: 1});
+    const animeIn = (el)=> gsap.to(el, {x: 100, duration: 1, ease: "elastic.out(1, 0.3)"});
+    const animeOut = (el)=> gsap.to(el, {x: 0, duration: 1});
+
+    const createListOfSvg = (number_of_svg) => {
+
+        const addRouteNameList = (list, number) => {
+            const svg_name_type = "face";
+            const route = "/images/face/";
+            return list.concat({route :`${route}${svg_name_type + number}.svg`, id: number})
+        };
+
+        const recursiveFunction = (nb, iteration, res, fn) => iteration > nb ? res : recursiveFunction(nb, iteration + 1, fn(res, iteration), fn);
+
+        return recursiveFunction(number_of_svg, 0, [], addRouteNameList)
+    }
+
+    const svg_rout_list = createListOfSvg(11);
+    const svg_childs = svg_rout_list.map(el => <Svg key={el.id} src={el.route} />)
 
     const intersectionFunction = (entries, observer) => {
         entries.forEach(el => {
-            if(el.intersectionRatio > options_scroll_observer.threshold) return anime(el.target)
-            return anime2(el.target)
+            if(el.intersectionRatio > options_scroll_observer.threshold) return animeIn(el.target)
+            return animeOut(el.target)
             
         })
     }
@@ -33,7 +49,7 @@ export default function pres(props){
 
     return <>
         <div ref={elem} className={styles.container}>
-            <Svg src="/images/me.svg" />
+            {svg_childs}
         </div>
     </>
 }
