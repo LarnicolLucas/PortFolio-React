@@ -59,7 +59,9 @@ export default function pres(props){
 
     return <>
         <div ref={container} className={styles.container}>
-            {svg_childs}
+            <figure className={styles.figureContainer}>
+                {svg_childs}
+            </figure>
         </div>
     </>
 }
