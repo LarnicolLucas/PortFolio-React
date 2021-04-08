@@ -7,7 +7,7 @@ export default function pres(props){
 
     const options_scroll_observer = {
         root: null,
-        threshold: 0.5,
+        threshold: 0.9,
         rootMargin: "0px"
     };
 
