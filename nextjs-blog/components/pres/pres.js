@@ -3,6 +3,7 @@ import styles from './pres.module.sass'
 import Svg from '../intro/svg_intro.js'
 import Row from '../utils/row.js'
 import Col from '../utils/col.js'
+import createObserver from '../utils/domObserver.js'
 
 export default function pres(props){
     const container = useRef();
@@ -49,13 +50,8 @@ export default function pres(props){
         })
     };
 
-    const observer = useRef(null)
-
     useEffect( ()=> {
-        if (observer.current) observer.current.disconnect() ;
-        observer.current = new IntersectionObserver(intersectionFunction, options_scroll_observer);
-        observer.current.observe(container.current);
-        return function cleanObserver(){ observer.current.disconnect() }
+        createObserver(container.current, options_scroll_observer, intersectionFunction)
     }, []);
     
 
