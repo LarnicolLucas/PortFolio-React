@@ -1,6 +1,8 @@
 import {useState, useEffect, useRef} from 'react'
 import styles from './pres.module.sass'
 import Svg from '../intro/svg_intro.js'
+import Row from '../utils/row.js'
+import Col from '../utils/col.js'
 
 export default function pres(props){
     const container = useRef();
@@ -59,9 +61,14 @@ export default function pres(props){
 
     return <>
         <div ref={container} className={styles.container}>
-            <figure className={styles.figureContainer}>
-                {svg_childs}
-            </figure>
+            <Row reset={true}>
+                <Col size='2' />
+                <Col>
+                    <figure className={styles.figureContainer}>
+                        {svg_childs}
+                    </figure>
+                </Col>
+            </Row>
         </div>
     </>
 }
