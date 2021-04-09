@@ -1,9 +1,17 @@
 import styles from './text_pres.module.sass'
+import {useRef, useEffect} from 'react'
 
 const text_pres = (props) => {
 
+    const container = useRef();
+
+    useEffect(()=> {
+        if(props.anime === undefined) return ;
+        props.animation(container.current, props.anime)
+    }, [props.anime])
+
     return <>
-        <article className={styles.container}>
+        <article className={styles.container} ref={container}>
             <h3>Hello</h3>
             <p>I am Lucas. I have been programming since 2017. 
                 I started by doing home automation with a Raspberry Pi. 
