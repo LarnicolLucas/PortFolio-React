@@ -8,12 +8,6 @@ import createObserver from '../utils/domObserver.js'
 export default function pres(props){
     const container = useRef();
 
-    const options_scroll_observer = {
-        root: null,
-        threshold: 0.9,
-        rootMargin: "0px"
-    };
-
     const createListOfSvg = (number_of_svg) => {
 
         const addRouteNameList = (list, number) => {
@@ -42,16 +36,16 @@ export default function pres(props){
     const animeIn = () => setSvgChilds(createChildList(true));
     const animeOut = () => setSvgChilds(createChildList(false));
 
-    const intersectionFunction = (entries, observer) => {
-        //no Functional
-        entries.forEach(el => {
-            if(el.intersectionRatio > options_scroll_observer.threshold) return animeIn()
-            return animeOut()
-        })
+    const options_scroll_observer = {
+        root: null,
+        threshold: 0.9,
+        rootMargin: "0px"
     };
 
+
+
     useEffect( ()=> {
-        createObserver(container.current, options_scroll_observer, intersectionFunction)
+        createObserver(container.current, options_scroll_observer, animeIn, animeOut)
     }, []);
     
 
