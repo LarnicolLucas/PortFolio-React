@@ -9,6 +9,7 @@ import Col from '../utils/col.js'
 
 import createObserver from '../utils/domObserver.js'
 import animationSvg from './animation_svg.js'
+import animationText from './animation_text.js'
 
 export default function pres(props){
     const container = useRef();
@@ -42,10 +43,11 @@ export default function pres(props){
 
     //ecouteru d'état sur la liste JSX SVG
     const [svg_childs, setSvgChilds] = useState(createChildList(false));
+    const [text, setText] = useState(<Text_pres animation={animationText} anime={false}/>)
 
     //mise à jour de l'état de l'animation (in - out)
-    const animeIn = () => setSvgChilds(createChildList(true));
-    const animeOut = () => setSvgChilds(createChildList(false));
+    const animeIn = () => {setSvgChilds(createChildList(true)); setText(<Text_pres animation={animationText} anime={true}/>)};
+    const animeOut = () => {setSvgChilds(createChildList(false)); setText(<Text_pres animation={animationText} anime={false}/>)};
 
     //parametre de l'observer
     const options_scroll_observer = {
@@ -70,7 +72,7 @@ export default function pres(props){
                     </figure>
                 </Col>
                 <Col>
-                    <Text_pres/>
+                    {text}
                 </Col>
                 <Col size='2' />
             </Row>
