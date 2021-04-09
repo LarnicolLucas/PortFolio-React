@@ -1,8 +1,12 @@
 import {useState, useEffect, useRef} from 'react'
+
 import styles from './pres.module.sass'
+
 import Svg from '../intro/svg_intro.js'
+import Text_pres from './text_pres.js'
 import Row from '../utils/row.js'
 import Col from '../utils/col.js'
+
 import createObserver from '../utils/domObserver.js'
 import animationSvg from './animation_svg.js'
 
@@ -65,6 +69,10 @@ export default function pres(props){
                         {svg_childs}
                     </figure>
                 </Col>
+                <Col>
+                    <Text_pres/>
+                </Col>
+                <Col size='2' />
             </Row>
         </div>
     </>
