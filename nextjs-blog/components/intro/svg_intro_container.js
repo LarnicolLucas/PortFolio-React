@@ -17,7 +17,7 @@ export default function containe_SVG() {
     }
 
     return(
-        <section onMouseMove={givePos} className={styles.container}>
+        <section onMouseMove={givePos} className={styles.container_intro}>
             <figure className={styles.animeLogo}>
                 <SVGIntro src="/images/la.svg" posX={-2*posX}></SVGIntro>
                 <SVGIntro src="/images/left.svg" posX={posX} posY={posY}></SVGIntro>
