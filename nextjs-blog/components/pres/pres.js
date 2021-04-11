@@ -52,7 +52,7 @@ export default function pres(props){
     //parametre de l'observer
     const options_scroll_observer = {
         root: null,
-        threshold: 0.75,
+        threshold: 0.5,
         rootMargin: "0px"
     };
 
