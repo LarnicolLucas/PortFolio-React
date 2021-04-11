@@ -6,7 +6,7 @@ import Link_nav from './nav_button.js'
 
 export default function nav_container(props){
     return <>
-        <nav>
+        <nav className={styles.nav_container}>
             <Row reset={true}>
                 <Col size="8">
                     <figure>  
