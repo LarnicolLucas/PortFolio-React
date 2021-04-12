@@ -11,7 +11,7 @@ const text_pres = (props) => {
     }, [props.anime])
 
     return <>
-        <article className={styles.container} ref={container}>
+        <article ref={container}>
             <h3>Hello</h3>
             <p>I am Lucas. I have been programming since 2017. 
                 I started by doing home automation with a Raspberry Pi. 
