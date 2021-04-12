@@ -52,7 +52,7 @@ export default function pres(props){
     //parametre de l'observer
     const options_scroll_observer = {
         root: null,
-        threshold: 0.5,
+        threshold: 0.8,
         rootMargin: "0px"
     };
 
@@ -64,14 +64,14 @@ export default function pres(props){
 
     return <>
         <div ref={container} className={styles.container}>
-            <Row reset={true}>
+            <Row reset={true} height={100}>
                 <Col size='2' />
                 <Col>
                     <figure className={styles.figureContainer}>
                         {svg_childs}
                     </figure>
                 </Col>
-                <Col>
+                <Col align={"flex-end"}>
                     {text}
                 </Col>
                 <Col size='2' />
