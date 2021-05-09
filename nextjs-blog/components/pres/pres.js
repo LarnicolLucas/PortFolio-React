@@ -31,7 +31,7 @@ export default function pres(props){
         return recursiveFunction(number_of_svg, 0, [], addRouteNameList)
     };
     //enregitrement du tableau dans la variable svg_rout_list
-    const svg_rout_list = createListOfSvg(11);
+    const svg_rout_list = createListOfSvg(13);
 
     //fonction de creation de JSX avec pour argument l'existance d'une animation (Bolean)
     const createChildList = (animation)=> svg_rout_list.map(el => <Svg 
