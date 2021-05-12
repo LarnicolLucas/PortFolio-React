@@ -6,7 +6,7 @@ export default function Block_institut(props) {
         <>
             <article className={styles.block} style={ {gridColumn: props.col, gridRow: props.row } }>
                 <h3> {props.label} </h3>
-                <figure>
+                <figure className={styles.figure}>
                     <img src={props.src} alt={props.alt}/>
                 </figure>
             </article>
