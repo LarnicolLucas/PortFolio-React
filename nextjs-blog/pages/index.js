@@ -3,6 +3,7 @@ import NAV_container from '../components/nav/nav_container.js'
 import SVG_intro_container from '../components/intro/svg_intro_container.js'
 import Pres from '../components/pres/pres.js'
 import styles from './index.module.sass'
+import Skills from '../components/skills/skills.js'
 
 export default function index(props){
 
@@ -13,6 +14,7 @@ export default function index(props){
             <SVG_intro_container/>
           </section>
           <Pres/>
+          <Skills />
       </Layout>
     </>
 }
