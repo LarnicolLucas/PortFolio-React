@@ -4,6 +4,8 @@ import styles from './pres.module.sass'
 
 import Svg from '../intro/svg_intro.js'
 import Text_pres from './text_pres.js'
+
+import Grid from '../utils/grid/grid.js'
 import Row from '../utils/row.js'
 import Col from '../utils/col.js'
 
@@ -63,19 +65,17 @@ export default function pres(props){
     
 
     return <>
-        <div ref={container} className={styles.container}>
-            <Row reset={true} height={100}>
-                <Col size='2' />
-                <Col>
-                    <figure className={styles.figureContainer}>
-                        {svg_childs}
-                    </figure>
-                </Col>
-                <Col align={"flex-end"}>
+        <section ref={container} className={styles.container}>
+            <Grid nb={2} addClass={styles.grid}>
+
+                <figure className={styles.figureContainer}>
+                    {svg_childs}
+                </figure>
+
+                <article className={styles.text}>
                     {text}
-                </Col>
-                <Col size='2' />
-            </Row>
-        </div>
+                </article>
+            </Grid>
+        </section>
     </>
 }

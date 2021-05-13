@@ -1,12 +1,58 @@
 .container
- width: 100%
- height: 100vh
- position: relative
- overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100vh
+    position: relative
+    overflow: hidden
 
- .row0
-     height: 100%
+.grid
+    width: 66%
 
 .figureContainer
     position: relative
     width: 275px
+    grid-column: 1
+    grid-row: 1
+.text
+    grid-column: 2
+    grid-row: 2
+
+@media only screen and (max-width: 700px )
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: auto
+        position: relative
+        overflow: hidden
+        margin-top: 150px
+        margin-bottom: 150px
+    .figureContainer
+        position: relative
+        width: 275px
+        grid-column: 1
+        grid-row: 1
+    .text
+        margin-top: 75px
+        grid-column: 1
+        grid-row: 2
+@media only screen and (min-width: 1200px )
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 100vh
+        position: relative
+        overflow: hidden
+    .figureContainer
+        position: relative
+        width: 275px
+        grid-column: 1
+        grid-row: 1
+    .text
+        grid-column: 2
+        grid-row: 2
