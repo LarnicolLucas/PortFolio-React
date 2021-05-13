@@ -1,5 +1,4 @@
 import styles from './svg_intro.module.css'
-import  {gsap} from 'gsap'
 import {useRef, useEffect} from 'react'
 
 export default function SVGIntro(props){

@@ -1,6 +1,6 @@
 import SVGIntro from './svg_intro.js'
 import React, {useState} from 'react'
-import styles from './svg_intro_container.module.css'
+import styles from './svg_intro_container.module.sass'
 
 
 export default function containe_SVG() {
