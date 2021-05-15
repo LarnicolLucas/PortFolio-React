@@ -13,7 +13,7 @@ export default  {
         {id: 2, name: "MongoDB", src: "/images/icons_devs/mongodb.svg"},
     ],
     design: [
-        {id: 0, name: "Inskape", src: "/images/icons_devs/inskape.svg"},
+        {id: 0, name: "Inskape", src: "/images/icons_devs/inkscape.svg"},
         {id: 1, name: "Gimp", src: "/images/icons_devs/gimp.svg"},
         {id: 2, name: "Photoshop", src: "/images/icons_devs/photoshop.svg"},
         {id: 3, name: "Illustrator", src: "/images/icons_devs/illustrator.svg"},
