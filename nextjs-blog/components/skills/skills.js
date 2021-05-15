@@ -14,7 +14,10 @@ export default function Skills (){
 
     return <>
             <section className={styles.container}>
-                {childs}
+                <h2 className={styles.title}>My Tools</h2>
+                <section className={styles.skill_container}>
+                    {childs}
+                </section>
             </section>
     </>
 
