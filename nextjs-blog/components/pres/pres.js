@@ -6,8 +6,6 @@ import Svg from '../intro/svg_intro.js'
 import Text_pres from './text_pres.js'
 
 import Grid from '../utils/grid/grid.js'
-import Row from '../utils/row.js'
-import Col from '../utils/col.js'
 
 import createObserver from '../utils/domObserver.js'
 import animationSvg from './animation_svg.js'
