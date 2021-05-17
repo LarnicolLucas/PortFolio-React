@@ -16,7 +16,7 @@ export default function skills_description(props){
                 <h3 className={styles.title}>{props.title} </h3>
 
                 <section onMouseOver={()=> setTrig(true)} onMouseOut={()=> setTrig(false)}>
-                    <Logo src={props.src} trig={trig} />
+                    <Logo src={props.src} trig={trig} id={props.id_logo}/>
                 </section>
                 
                 

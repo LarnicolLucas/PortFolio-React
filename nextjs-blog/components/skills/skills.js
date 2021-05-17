@@ -10,7 +10,13 @@ export default function Skills (){
         {id: 2, src: "images/skills/server_sidev1.svg", title: "Back End", list: skills_list.back},
     ];
 
-    const childs = skills.map(el => <Skills_description key={el.id} src= {el.src} title= {el.title} list= {el.list} /> )
+    const childs = skills.map(el => <Skills_description 
+        key={el.id} 
+        src= {el.src} 
+        title= {el.title} 
+        list= {el.list} 
+        id_logo= {`fond${el.id}`}
+    /> )
 
     return <>
             <section className={styles.container}>
