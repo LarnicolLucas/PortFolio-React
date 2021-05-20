@@ -16,14 +16,18 @@ export default function Nav(props){
     )
 
     return <>
-        <header className={styles.container}>
-            <nav className={`${styles.nav} ${scrolled}`}>
+        <section className={styles.block}>
+            <nav className={`${styles.container} ${scrolled}`}>
+
+                <h1 className={styles.title}>L'institut de Pauline</h1>
 
                 <figure className={styles.figure}>
+                        
                     <Fond />
+
                 </figure>
 
             </nav>
-        </header>
+        </section>
     </>
 }
