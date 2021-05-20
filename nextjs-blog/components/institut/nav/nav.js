@@ -10,8 +10,8 @@ export default function Nav(props){
     const scrollAction = (e)=> window.scrollY > 0 ? setScrolled(styles.scroll_nav) : setScrolled("")
 
     useEffect(()=> {
-            window.addEventListener('scroll', scrollAction)
-            return window.removeEventListener('scroll', scrollAction)
+            window.addEventListener('scroll', scrollAction);
+            return () => window.removeEventListener('scroll', scrollAction);
         }
     )
 
