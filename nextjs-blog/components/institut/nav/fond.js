@@ -6,25 +6,25 @@ export default function fond(props){
         <defs>
 			<linearGradient id="gradientFill" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
 						
-							<stop offset="0" stop-color="#940000" />
+							<stop offset="0" stopColor="#940000" />
 						
-							<stop offset="0.1111111111111111" stop-color="#a61f1f" />
+							<stop offset="0.1111111111111111" stopColor="#a61f1f" />
 						
-							<stop offset="0.2222222222222222" stop-color="#b63539" />
+							<stop offset="0.2222222222222222" stopColor="#b63539" />
 						
-							<stop offset="0.3333333333333333" stop-color="#c54952" />
+							<stop offset="0.3333333333333333" stopColor="#c54952" />
 						
-							<stop offset="0.4444444444444444" stop-color="#d15e6c" />
+							<stop offset="0.4444444444444444" stopColor="#d15e6c" />
 						
-							<stop offset="0.5555555555555556" stop-color="#dd7284" />
+							<stop offset="0.5555555555555556" stopColor="#dd7284" />
 						
-							<stop offset="0.6666666666666666" stop-color="#e6879c" />
+							<stop offset="0.6666666666666666" stopColor="#e6879c" />
 						
-							<stop offset="0.7777777777777777" stop-color="#ef9cb4" />
+							<stop offset="0.7777777777777777" stopColor="#ef9cb4" />
 						
-							<stop offset="0.8888888888888888" stop-color="#f7b1c9" />
+							<stop offset="0.8888888888888888" stopColor="#f7b1c9" />
 						
-							<stop offset="1" stop-color="#ffc6de" />
+							<stop offset="1" stopColor="#ffc6de" />
 						
 			</linearGradient>
 		</defs>
