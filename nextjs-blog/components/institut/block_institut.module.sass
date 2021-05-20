@@ -7,6 +7,33 @@
     border-top: 1px solid black
     cursor: pointer
     position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    padding: 5px
+.svg
+    transition: all 0.2s ease-out
 .appear
+    opacity: 1
+    transform: translateX(0)
+.svg_over
+    transform: translate(-80px, -50px) scale(0.5)
+.text
+    position: absolute
+    opacity: 0
+    transform: translateX(-50px)
+    height: 90%
+    width: 100%
+    background: grey
+    display: flex
+    justify-content: center
+    align-items: center
+    clip-path: ellipse(90% 66% at 10% 20%)
+    border-radius: 16px
+    background: rgb(148,0,0)
+    background: linear-gradient(171deg, rgba(148,0,0,1) 0%, rgba(221,114,132,0.831886099166229) 23%, rgba(255,198,222,1) 100%)
+    color: #fff
+.text_over
     opacity: 1
     transform: translateX(0)
