@@ -11,6 +11,8 @@ export default function Layout({children}) {
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <link rel="preconnect" href="https://fonts.gstatic.com"/>
+          <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
           <meta
             name="description"
             content="My Web Page Presentation"
