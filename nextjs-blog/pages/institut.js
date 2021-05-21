@@ -1,6 +1,7 @@
-import Link from 'next/link'
+
 import Head from 'next/head'
 import Layout from '../components/layout'
+import SocialMediaContainer from '../components/institut/social_media/socialMediaContainer.js'
 
 import styles from './institut.module.sass'
 
@@ -18,6 +19,11 @@ export default function firstPost(){
             <section className={styles.container_items}>
                 <Nav_institut />
             </section>
+
+            <article>
+                <SocialMediaContainer />
+            </article>
+
         </Layout>
 
     </>)
