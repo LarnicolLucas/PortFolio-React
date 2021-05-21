@@ -6,8 +6,8 @@ export default function Skills (){
 
     const skills = [
         {id: 0, src: "front", title: "Front End", list: skills_list.front},
-        {id: 1, src: "back", title: "Design", list: skills_list.design},
-        {id: 2, src: "design", title: "Back End", list: skills_list.back},
+        {id: 1, src: "design", title: "Design", list: skills_list.design},
+        {id: 2, src: "back", title: "Back End", list: skills_list.back},
     ];
 
     const childs = skills.map(el => <Skills_description 
