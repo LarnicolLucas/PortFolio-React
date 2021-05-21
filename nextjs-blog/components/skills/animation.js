@@ -11,8 +11,8 @@ export default function AnimateSkill(props){
             ref={anim}
             href= {`#${props.target}`}
             attributeName= "d"
-            from= {props.path0}
-            to= {props.path1} 
+            from= {props.trig ? props.path0: props.path1} 
+            to= {props.trig ? props.path1: props.path0} 
             dur= {props.dur}
             begin= "indefinite"
             fill= "freeze"
