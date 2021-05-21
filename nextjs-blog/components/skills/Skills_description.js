@@ -1,5 +1,6 @@
-import {useState} from 'react'
+import {useEffect, useState, useRef} from 'react'
 
+import createObserver from '../utils/domObserver.js'
 import styles from './Skills_description.module.sass'
 import Logo from './logo/logo.js'
 import List from './list/list.js'
@@ -7,15 +8,30 @@ import List from './list/list.js'
 export default function skills_description(props){
 
     const [trig, setTrig] = useState(false);
+    const container= useRef()
 
-    const list = props.list.map(el => <List key={el.id} name={el.name} src={el.src}/>)
+    const list = props.list.map(el => <List key={el.id} name={el.name} src={el.src}/>);
+
+    const options_scroll_observer = {
+        root: null,
+        threshold: 0.8,
+        rootMargin: "0px"
+    };
+
+    const animeIn = ()=> setTrig(true);
+    const animeOut = ()=> setTrig(false);
+
+    useEffect(()=>
+        createObserver(container.current, options_scroll_observer, animeIn, animeOut)
+    , [])
+
 
     return <>
             <article className={styles.skill}>
 
                 <h3 className={styles.title}>{props.title} </h3>
 
-                <section onMouseOver={()=> setTrig(true)} onMouseOut={()=> setTrig(false)}>
+                <section ref={container} className={styles.logoContainer}>
                     <Logo src={props.src} trig={trig} id={props.id_logo}/>
                 </section>
                 
