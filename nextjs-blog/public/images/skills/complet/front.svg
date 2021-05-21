@@ -113,7 +113,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -122,8 +122,7 @@
      id="layer3"
      inkscape:label="haut 1"
      transform="translate(-47.631201,-85.625077)"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <ellipse
        style="display:inline;fill:url(#radialGradient2956);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.165;filter:url(#filter3038)"
        id="path2927"
@@ -131,7 +130,7 @@
        cy="167.08472"
        rx="28.145824"
        ry="8.75"
-       transform="matrix(1.4337815,0,0,1.4337815,-48.430382,-71.002832)" />
+       transform="matrix(1.4337815,0,0,1.4337815,-48.430382,-90.052844)" />
   </g>
   <g
      inkscape:groupmode="layer"
