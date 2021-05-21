@@ -26,12 +26,40 @@
     border-left: 4px solid #515151
     border-right: 4px solid #515151
     border-radius: 50%
-    transform: skewX(20deg)
 .container:hover::after
     border-top: 4px solid #515151
     border-bottom: 4px solid #515151
     border-radius: 50%
-    transform: skewX(-20deg)
 .img
     width: 66%
+
+@media only screen and (max-width: 700px )
+    .container
+        display: inline-block
+        width: 20vw
+        height: 20vw
+        line-height: 20vw
+        text-align: center
+        color: #515151
+        transition: all 0.3s ease-out
+        position: relative
+        margin: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+
+@media only screen and (min-width: 1200px )
+    .container
+        display: inline-block
+        width: 5vw
+        height: 5vw
+        line-height: 5vw
+        text-align: center
+        color: #515151
+        transition: all 0.3s ease-out
+        position: relative
+        margin: 10px
+        display: flex
+        justify-content: center
+        align-items: center
 
