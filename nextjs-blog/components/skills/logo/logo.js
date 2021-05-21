@@ -1,30 +1,45 @@
 import styles from './logo.module.sass'
-import {useRef, useEffect, useState} from 'react'
+import {useRef, useEffect} from 'react'
 import gsap from 'gsap'
-
-import Fond from './fond.js'
 
 export default function logo(props){
 
-    const svg = useRef();
-    const [trigFond, setTrigFond] = useState(false)
+    const svgs = [
+        {
+            src: `images/skills/shadow.svg`, 
+            anim_propreties : {opacity: 1, y: 33, duration: 1, ease: "expo.out"},
+            ref: useRef()
+        },
+        {
+            src: `images/skills/${props.src}_block.svg`, 
+            anim_propreties : {opacity: 1, delay: 0.15, y: 33, duration: 1, ease: "expo.out"},
+            ref: useRef()
+        },
+        {
+            src: `images/skills/${props.src}_top.svg`, 
+            anim_propreties : {opacity: 1, delay: 0.3, y: 33, duration: 1, ease: "expo.out"},
+            ref: useRef()
+        }
+    ];
 
-    const animSvg = (bol)=> bol ? 
-        gsap.to(svg.current, {x: 25, duration: 1, ease: "expo.out"}) :
-        gsap.to(svg.current, {x: 0, duration: 1, ease: "expo.out"})
+    const images = svgs.map(el => <img src={el.src} className={styles.svgs} ref={el.ref}/>);
+
+    const animSvg = (bol)=> bol ?
+        svgs.map(el => gsap.to(el.ref.current, el.anim_propreties)) :
+        svgs.map(el => gsap.to(el.ref.current, {opacity: 0, y: 0, duration: 0.5, ease: "expo.out"}))
     ;
 
     useEffect( ()=> {
-        animSvg(props.trig);
+        animSvg(props.trig)
     });
 
     return <>
-        <figure className={styles.container} onMouseOver={()=> setTrigFond(true)}>
+        <figure className={styles.container}>
             
-            <Fond  trig={trigFond} id={props.id}/>
-            <img src={props.src} className={styles.svgs} ref={svg}/>
-            <img src="images/skills/fond.svg" className={styles.hide}/>
-    
+            {images}
+
+            <img src={svgs[2].src} className={styles.hide}/>
+
         </figure>
     </>
 }
