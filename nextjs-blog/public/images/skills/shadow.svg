@@ -53,6 +53,19 @@
          stdDeviation="1.1087944"
          id="feGaussianBlur3040" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1038"
+       x="-0.25641158"
+       width="1.5128232"
+       y="-0.82479033"
+       height="2.6495807">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="8.6228998"
+         id="feGaussianBlur1040" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -88,7 +101,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -97,7 +110,7 @@
      id="layer3"
      inkscape:label="haut 1"
      transform="translate(-47.631201,-85.625077)"
-     style="display:inline">
+     style="display:inline;opacity:0.74193548;filter:url(#filter1038)">
     <ellipse
        style="display:inline;fill:url(#radialGradient2956);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.165;filter:url(#filter3038)"
        id="path2927"
