@@ -36,9 +36,9 @@ export default function skills_description(props){
                 </section>
                 
                 
-                <ul>
+                <section className={styles.container_description}>
                     {list}
-                </ul>
+                </section>
             </article>
     </>
 
