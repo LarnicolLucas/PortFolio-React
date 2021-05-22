@@ -14,7 +14,7 @@ export default function skills_description(props){
 
     const options_scroll_observer = {
         root: null,
-        threshold: 0.8,
+        threshold: 0.6,
         rootMargin: "0px"
     };
 
@@ -27,11 +27,11 @@ export default function skills_description(props){
 
 
     return <>
-            <article className={styles.skill}>
+            <article ref={container} className={styles.skill}>
 
                 <h3 className={styles.title}>{props.title} </h3>
 
-                <section ref={container} className={styles.logoContainer}>
+                <section className={styles.logoContainer}>
                     <Logo src={props.src} trig={trig} id={props.id_logo}/>
                 </section>
                 
