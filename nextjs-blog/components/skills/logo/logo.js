@@ -12,12 +12,12 @@ export default function logo(props){
         },
         {
             src: `images/skills/${props.src}_block.svg`, 
-            anim_propreties : {opacity: 1, delay: 0.15, y: 33, duration: 1, ease: "expo.out"},
+            anim_propreties : {opacity: 1, delay: 0.15, y: 0, duration: 1, ease: "expo.out"},
             ref: useRef()
         },
         {
             src: `images/skills/${props.src}_top.svg`, 
-            anim_propreties : {opacity: 1, delay: 0.3, y: 33, duration: 1, ease: "expo.out"},
+            anim_propreties : {opacity: 1, delay: 0.3, y: 0, duration: 1, ease: "expo.out"},
             ref: useRef()
         }
     ];
@@ -26,7 +26,7 @@ export default function logo(props){
 
     const animSvg = (bol)=> bol ?
         svgs.map(el => gsap.to(el.ref.current, el.anim_propreties)) :
-        svgs.map(el => gsap.to(el.ref.current, {opacity: 0, y: 0, duration: 0.5, ease: "expo.out"}))
+        svgs.map(el => gsap.to(el.ref.current, {opacity: 0, y: -33, duration: 0.5, ease: "expo.out"}))
     ;
 
     useEffect( ()=> {
