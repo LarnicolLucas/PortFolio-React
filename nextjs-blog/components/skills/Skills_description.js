@@ -32,7 +32,7 @@ export default function skills_description(props){
                 <h3 className={styles.title}>{props.title} </h3>
 
                 <section className={styles.logoContainer}>
-                    <Logo src={props.src} trig={trig} id={props.id_logo}/>
+                    <Logo src={props.src} trig={trig} id={props.id_logo} anim_delay={props.anim_delay}/>
                 </section>
                 
                 

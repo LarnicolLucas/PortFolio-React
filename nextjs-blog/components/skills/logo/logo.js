@@ -7,17 +7,17 @@ export default function logo(props){
     const svgs = [
         {
             src: `images/skills/shadow.svg`, 
-            anim_propreties : {opacity: 1, y: 33, duration: 1, ease: "expo.out"},
+            anim_propreties : {opacity: 1, delay: props.anim_delay, y: 33, duration: 1, ease: "expo.out"},
             ref: useRef()
         },
         {
             src: `images/skills/${props.src}_block.svg`, 
-            anim_propreties : {opacity: 1, delay: 0.15, y: 0, duration: 1, ease: "expo.out"},
+            anim_propreties : {opacity: 1, delay: props.anim_delay + 0.15, y: 0, duration: 1, ease: "expo.out"},
             ref: useRef()
         },
         {
             src: `images/skills/${props.src}_top.svg`, 
-            anim_propreties : {opacity: 1, delay: 0.3, y: 0, duration: 1, ease: "expo.out"},
+            anim_propreties : {opacity: 1, delay: props.anim_delay + 0.3, y: 0, duration: 1, ease: "expo.out"},
             ref: useRef()
         }
     ];

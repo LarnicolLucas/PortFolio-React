@@ -5,9 +5,9 @@ import skills_list from './skills_list.js'
 export default function Skills (){
 
     const skills = [
-        {id: 0, src: "front", title: "Front End", list: skills_list.front},
-        {id: 1, src: "design", title: "Design", list: skills_list.design},
-        {id: 2, src: "back", title: "Back End", list: skills_list.back},
+        {id: 0, src: "front", title: "Front End", list: skills_list.front, anim_delay: 0},
+        {id: 1, src: "design", title: "Design", list: skills_list.design, anim_delay: 0.15},
+        {id: 2, src: "back", title: "Back End", list: skills_list.back, anim_delay: 0.3},
     ];
 
     const childs = skills.map(el => <Skills_description 
@@ -16,6 +16,7 @@ export default function Skills (){
         title= {el.title} 
         list= {el.list} 
         id_logo= {`fond${el.id}`}
+        anim_delay= {el.anim_delay}
     /> )
 
     return <>
