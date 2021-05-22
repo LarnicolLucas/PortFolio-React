@@ -1,0 +1,27 @@
+.butLink
+    transition: all 0.25s ease-out
+    padding-left: 10%
+    padding-right: 10%
+    padding-top: 1%
+    padding-bottom: 1%
+    position: relative
+    overflow: hidden
+
+.butLink::before
+    transition: all 0.1s ease-out
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #000
+    border-radius: 13px
+    z-index: -1
+    transform: translateY(-100%)
+
+.butLink:hover   
+    font-size: 0.9em
+    color: #fff
+.butLink:hover::before   
+    transform: translateY(0)

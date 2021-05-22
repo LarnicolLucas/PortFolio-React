@@ -1,5 +1,5 @@
 import styles from './nav_container.module.sass'
-
+import ButLink from './linkButton/link.js'
 
 
 export default function nav_container(props){
@@ -9,8 +9,8 @@ export default function nav_container(props){
                 <img src="/images/logo.svg" className={styles.img}/>
             </figure>
             <section className={styles.link_container}>
-                <a>Contact</a>
-                <a>About</a>
+                <ButLink name="Contact" />
+                <ButLink name="About" />
             </section>
         </nav>
     </>
