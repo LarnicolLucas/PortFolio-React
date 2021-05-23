@@ -6,23 +6,26 @@ export default function logo(props){
 
     const svgs = [
         {
+            id: 0,
             src: `images/skills/shadow.svg`, 
             anim_propreties : {opacity: 1, delay: props.anim_delay, y: 33, duration: 1, ease: "expo.out"},
             ref: useRef()
         },
         {
+            id: 1,
             src: `images/skills/${props.src}_block.svg`, 
             anim_propreties : {opacity: 1, delay: props.anim_delay + 0.15, y: 0, duration: 1, ease: "expo.out"},
             ref: useRef()
         },
         {
+            id: 2,
             src: `images/skills/${props.src}_top.svg`, 
             anim_propreties : {opacity: 1, delay: props.anim_delay + 0.3, y: 0, duration: 1, ease: "expo.out"},
             ref: useRef()
         }
     ];
 
-    const images = svgs.map(el => <img src={el.src} className={styles.svgs} ref={el.ref}/>);
+    const images = svgs.map(el => <img key={el.id} src={el.src} className={styles.svgs} ref={el.ref}/>);
 
     const animSvg = (bol)=> bol ?
         svgs.map(el => gsap.to(el.ref.current, el.anim_propreties)) :
