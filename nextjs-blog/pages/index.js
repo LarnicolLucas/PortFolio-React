@@ -14,7 +14,7 @@ export default function index(props){
   const givePos = (e) => {
     const convert = (value) => (value/50)
     setMousePos([convert(e.clientX), convert(e.clientY)])
-}
+  }
 
   return <>
       <Layout>
