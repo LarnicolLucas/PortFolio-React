@@ -20,7 +20,7 @@ export default function Card(props){
 
         </figure>
         <figcaption className={styles.figure}>
-            <h3>Larnicol Lucas</h3>
+            <h5 className={styles.name}>Larnicol Lucas</h5>
         </figcaption>
         <p className={`${styles.container} ${styles.titre}`}>
             Web devellopement

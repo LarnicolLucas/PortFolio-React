@@ -9,7 +9,7 @@ export default function Dash(prop){
     const matches = matchesQuery(700);
 
     const style= [
-        {gridColumn : "1", gridRow: "1", marginTop: "-7%", width: "70%", height: "100%"},
+        {gridColumn : "1", gridRow: "1", marginTop: "-10%", width: "60%", height: "80%"},
         {gridColumn : matches ? "2" : "1", gridRow: matches ? "1" : "2", width: "110%", height: "90%"},
         {gridColumn : "1", gridRow: matches ? "2" : "3", marginBottom: "-5%", width: "80%", height: "70%"},
         {gridColumn : matches ? "2" : "1", marginBottom: "-7%", marginRight: "-5%", width: "80%", height: "70%"}
