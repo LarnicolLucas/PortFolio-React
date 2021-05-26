@@ -9,9 +9,9 @@ export default function SideNav(prop){
             {id:3, name: "Items", src: "/images/dashboard/side/3.svg"}
         ];
 
-        const items = list.map(el => <section className={styles.containerList}>
+        const items = list.map(el => <section key={el.id} className={styles.containerList}>
             <img className={styles.img} src={el.src} />
-            <p style={{paddingLeft: "2%"}} key={el.id}> {el.name} </p>
+            <p style={{marginLeft: "5%"}} key={el.id}> {el.name} </p>
         </section>)
     return <>
         <section className={styles.list_container}>
