@@ -11,10 +11,32 @@ export default function Dash(prop){
     const matches = matchesQuery(700);
 
     const style= [
-        {gridColumn : "1", gridRow: "1", marginTop: "-10%", width: "60%", height: "90%"},
-        {gridColumn : matches ? "2" : "1", gridRow: matches ? "1" : "2", width: "110%", height: "90%"},
-        {gridColumn : "1", gridRow: matches ? "2" : "3", marginBottom: "-5%", width: "80%"},
-        {gridColumn : matches ? "2" : "1", marginBottom: "-7%", marginRight: "-5%", width: "80%", height: "70%"}
+        {
+            gridColumn : "1", 
+            gridRow: "1", 
+            marginTop: matches ? "-10%" : "5%", 
+            width: matches ? "-60%" : "80%", 
+            height: matches ? "100%" : "auto"
+        },
+        {
+            gridColumn : matches ? "2" : "1", 
+            gridRow: matches ? "1" : "2", 
+            width: matches ? "110%" : "80%",
+            height: matches ? "90%" : "auto"
+        },
+        {
+            gridColumn : "1", 
+            gridRow: matches ? "2" : "3", 
+            marginBottom: matches ? "-5%" : "0", 
+            width: "80%"
+        },
+        {
+            gridColumn : matches ? "2" : "1", 
+            marginBottom: matches ? "-7%" : "0",
+            marginRight: matches ? "-5%" : "0", 
+            width: "80%", 
+            height: matches ? "70%" : "auto",
+        }
     ]
 
     const list = [
