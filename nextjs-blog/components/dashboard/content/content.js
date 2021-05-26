@@ -40,8 +40,6 @@ export default function Dash(prop){
         }
     ];
 
-    console.log(style)
-
     const list = [
         {id: 0, child: <Card score={[5, 5, 33]} /> },
         {id: 1, child: <Items /> },
