@@ -11,7 +11,7 @@ export default function SideNav(prop){
 
         const items = list.map(el => <section key={el.id} className={styles.containerList}>
             <img className={styles.img} src={el.src} />
-            <p style={{marginLeft: "5%"}} key={el.id}> {el.name} </p>
+            <p key={el.id}> {el.name} </p>
         </section>)
     return <>
         <section className={styles.list_container}>
