@@ -5,6 +5,7 @@ import matchesQuery from '../../utils/matchesQuery/matches.js'
 import Card from './card/card.js'
 import Stats from './stats/stats.js'
 import Items from './items/items.js'
+import Graph from './graph/graph.js'
 
 export default function Dash(prop){
 
@@ -15,7 +16,7 @@ export default function Dash(prop){
             gridColumn : "1", 
             gridRow: "1", 
             marginTop: matches ? "-10%" : "5%", 
-            width: matches ? "-60%" : "80%", 
+            width: matches ? "60%" : "80%", 
             height: matches ? "100%" : "auto"
         },
         {
@@ -37,13 +38,15 @@ export default function Dash(prop){
             width: "80%", 
             height: matches ? "70%" : "auto",
         }
-    ]
+    ];
+
+    console.log(style)
 
     const list = [
         {id: 0, child: <Card score={[5, 5, 33]} /> },
         {id: 1, child: <Items /> },
         {id: 2, child: <Stats points={[90, 80, 75, 60, 75, 55, 30]}/> },
-        {id: 3, child: <p>Graph</p> }
+        {id: 3, child: <Graph /> }
     ];
 
     const contents = list.map(el => <article 
