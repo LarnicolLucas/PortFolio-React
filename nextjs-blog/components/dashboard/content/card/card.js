@@ -4,9 +4,9 @@ import Badge from './badge.js'
 export default function Card(props){
 
     const infos = [
-        {id: 0, name: "IMD", score: props.score[0]},
-        {id: 1, name: "VPS", score: props.score[1]},
-        {id: 2, name: "PST", score: props.score[2]},
+        {id: 0, name: "Pro", score: props.score[0]},
+        {id: 1, name: "Exp", score: props.score[1]},
+        {id: 2, name: "Age", score: props.score[2]},
     ].map(el => <Badge 
         key={el.id} 
         name={el.name} 

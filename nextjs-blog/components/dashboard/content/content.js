@@ -4,6 +4,7 @@ import matchesQuery from '../../utils/matchesQuery/matches.js'
 
 import Card from './card/card.js'
 import Stats from './stats/stats.js'
+import Items from './items/items.js'
 
 export default function Dash(prop){
 
@@ -17,8 +18,8 @@ export default function Dash(prop){
     ]
 
     const list = [
-        {id: 0, child: <Card score={[10, 15, 3]} /> },
-        {id: 1, child: <p>Spider</p> },
+        {id: 0, child: <Card score={[5, 5, 33]} /> },
+        {id: 1, child: <Items /> },
         {id: 2, child: <Stats points={[90, 80, 75, 60, 75, 55, 30]}/> },
         {id: 3, child: <p>Graph</p> }
     ];
