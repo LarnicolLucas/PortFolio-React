@@ -7,7 +7,7 @@ export default function Stats(props){
 
     const isResponsive = mediaQuery(700);
 
-    const size_circle = isResponsive ? 175 : 300;
+    const size_circle = isResponsive ? 175 : 250;
     const echelle_de_notation = 4;
 
     const valueToPoint= (value, index, total, size) => {
