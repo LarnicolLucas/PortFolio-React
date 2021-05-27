@@ -16,7 +16,7 @@ export default function Item(props){
             <p className={styles.p}>{el.name}</p>
             <p className={styles.p}>{el.value}%</p> 
         </article>
-        <LoadBar value={el.value}/>
+        <LoadBar color={props.color} value={el.value}/>
     </div>)
     return<>
         <section className={styles.container}>

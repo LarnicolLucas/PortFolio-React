@@ -7,6 +7,8 @@ import {useState} from 'react'
 
 export default function Dash(prop){
 
+    const color= "#FF9822"
+
     const [sideNavOpen, setSideNavOpen] = useState(false);
     const styleNav = {
         width: !sideNavOpen ? "25%" : "6%"
@@ -19,10 +21,10 @@ export default function Dash(prop){
             <img style={{ top: "70%", left: "50%" }} className={styles.img} src="/images/dashboard/fond/0.svg" />
             <section className={`${styles.glassMorphFond} ${glass.glass}`}></section>
             <aside className={styles.sideNav} style={styleNav}>
-                <Sidenav onSideNavOpen={(bol)=>  setSideNavOpen(bol)}/>
+                <Sidenav color={color} onSideNavOpen={(bol)=>  setSideNavOpen(bol)}/>
             </aside>
             <article className={styles.content}>
-                <Content />
+                <Content color={color}/>
             </article>
         </section>
     </>

@@ -10,7 +10,7 @@ export default function load(props){
     const styleBar = {
         width: `${props.value}%`,
         height: "100%",
-        background: "orange"
+        background: props.color
     }
     return <>
         <article className={styles.containerLoad} style={style}>

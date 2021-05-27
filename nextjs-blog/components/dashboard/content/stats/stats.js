@@ -74,7 +74,7 @@ export default function Stats(props){
 
         <svg width={size_circle} height={size_circle}>
 			<g>
-				<polygon fill="orange" strokeLinejoin="round" points={points}></polygon>
+				<polygon fill={props.color} strokeLinejoin="round" points={points}></polygon>
 				{circles}
                 {axisLabel}
 				

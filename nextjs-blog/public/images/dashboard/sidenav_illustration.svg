@@ -47,7 +47,8 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="bb328e6d-602c-4acd-b0f5-b204c203e1c3" />
+     inkscape:current-layer="bb328e6d-602c-4acd-b0f5-b204c203e1c3"
+     inkscape:document-rotation="0" />
   <polygon
      points="755.994 674.556 743.734 674.555 737.902 627.268 755.996 627.268 755.994 674.556"
      fill="#9e616a"
@@ -90,7 +91,7 @@
      cy="324"
      r="28"
      fill="#6c63ff"
-     style="fill:#2980b9;fill-opacity:1" />
+     style="fill:#26a0da;fill-opacity:1" />
   <circle
      id="ffdbdf53-78c2-412f-9ede-372406e5d245"
      data-name="Ellipse 301"
@@ -114,7 +115,7 @@
      cy="28"
      r="28"
      fill="#6c63ff"
-     style="fill:#2980b9;fill-opacity:1" />
+     style="fill:#26a0da;fill-opacity:1" />
   <circle
      id="a7ca0488-8ee6-49e2-b245-2872b84c042e"
      data-name="Ellipse 304"
@@ -122,7 +123,7 @@
      cy="236.535"
      r="28"
      fill="#6c63ff"
-     style="fill:#fbb461;fill-opacity:1" />
+     style="fill:#ff9822;fill-opacity:1" />
   <path
      id="b579ef19-595a-43de-9b6d-0ead8268ca48"
      data-name="Path 1507"
@@ -178,7 +179,7 @@
      d="M628.747,790.405V293.635c0-6.371,3.949-11.536,8.82-11.536h39.36c4.871,0,8.82,5.165,8.82,11.536V791.7Z"
      transform="translate(-189.41599 -106.099)"
      fill="#6c63ff"
-     style="fill:#2980b9;fill-opacity:1" />
+     style="fill:#26a0da;fill-opacity:1" />
   <circle
      cx="627.18243"
      cy="265.36557"

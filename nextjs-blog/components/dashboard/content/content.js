@@ -7,7 +7,7 @@ import Stats from './stats/stats.js'
 import Items from './items/items.js'
 import Graph from './graph/graph.js'
 
-export default function Dash(prop){
+export default function Dash(props){
 
     const matches = matchesQuery(700);
 
