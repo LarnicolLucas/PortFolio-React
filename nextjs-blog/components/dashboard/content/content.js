@@ -37,14 +37,15 @@ export default function Dash(prop){
             marginRight: matches ? "-5%" : "0", 
             width: "80%", 
             height: matches ? "70%" : "auto",
+            alignItems: "center"
         }
     ];
 
     const list = [
-        {id: 0, child: <Card score={[5, 5, 33]} /> },
-        {id: 1, child: <Items /> },
-        {id: 2, child: <Stats points={[90, 80, 75, 60, 75, 55, 30]}/> },
-        {id: 3, child: <Graph /> }
+        {id: 0, child: <Card color={props.color} score={[5, 5, 33]} /> },
+        {id: 1, child: <Items color={props.color} /> },
+        {id: 2, child: <Stats color={props.color} points={[90, 80, 75, 60, 75, 55, 30]}/> },
+        {id: 3, child: <Graph color={props.color}/> }
     ];
 
     const contents = list.map(el => <article 
