@@ -6,6 +6,7 @@ import SVG_intro_container from '../components/intro/svg_intro_container.js'
 import Pres from '../components/pres/pres.js'
 import styles from './index.module.sass'
 import Skills from '../components/skills/skills.js'
+import Portfolio from '../components/portfolio/portfolio.js'
 
 export default function index(props){
 
@@ -24,6 +25,7 @@ export default function index(props){
           </section>
           <Pres/>
           <Skills />
+          <Portfolio />
       </Layout>
     </>
 }
