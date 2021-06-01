@@ -4,33 +4,30 @@ export default function handler(req, res){
 
     const db_name = "dashboard";
 
-    const Lucas = {
-        "name": { "first": "Lucas", "last": "Larnicol" },
-        "birth": new Date(1987, 9, 18),
-        "experience": new Date(2017, 6, 1),
-        "projects": 6,                                                                                                                                                                                                                                                     
+    const Usher = {
+        "name": { "first": "Usher", "last": "Raymond IV" },
+        "birth": new Date(1978, 10, 14),
+        "experience": new Date(2020, 6, 1),
+        "projects": 2,                                                                                                                                                                                                                                                     
         "technos": [ 
-            {name: "React", value: 90}, 
-            {name: "Vue", value: 80},
-            {name: "CSS", value: 75},
-            {name: "NextJS", value: 60},
-            {name: "Node", value: 75},
-            {name: "SQLServer", value: 65},
-            {name: "MongoDB", value: 40}
+            {name: "PHP", value: 90}, 
+            {name: "Python", value: 40},
+            {name: "C#", value: 63},
+            {name: "C++", value: 20}
         ],
-        "job": "Web Devellopement",
+        "job": "Backend DEV",
         "histo": [
-            [0,100], 
-            [10, 50], 
+            [0,90], 
+            [10, 20], 
             [20, 50], 
-            [30, 50], 
-            [40, 50], 
+            [30, 40], 
+            [40, 10], 
             [50, 100], 
-            [60, 50], 
-            [70, 40],
-            [80, 50],
-            [90, 50],
-            [100, 20]
+            [60, 30], 
+            [70, 30],
+            [80, 70],
+            [90, 20],
+            [100, 70]
         ]
     }
 
@@ -41,7 +38,7 @@ export default function handler(req, res){
 
             const col = db.collection("people");
 
-            const p = await col.insertOne(Lucas);
+            const p = await col.insertOne(Usher);
 
             const myDoc = await col.findOne();
 
