@@ -28,7 +28,6 @@ $radius: 16px
     width: 100%
     height: 100%
     border-radius: $radius
-
 .content
     position: relative
     border-radius: 0 $radius $radius 0
@@ -40,26 +39,31 @@ $radius: 16px
     padding: 0
     grid-gap: 10px
     grid-template-columns: repeat(2, 1fr)
+.navOpen
+    width: 25%
+.navClose
+    width: 6%
 
 @media only screen and (max-width: 700px )
-    .sideNav
-        display: none
     .content
         grid-template-columns: repeat(1, 1fr)
     .container
         height: auto
         width: auto
+        margin-top: 70px
     .glassMorphFond
         display: none
+    .navOpen
+        width: 0
+    .navClose
+        width: 0
 
 @media only screen and (min-width: 1200px )
-    .sideNav
-        display: flex
     .content
         grid-template-columns: repeat(2, 1fr)
     .container
-        height: 82%
         width: 70%
+        height: 82%
     .glassMorphFond
         display: block
 

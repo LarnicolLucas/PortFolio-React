@@ -28,7 +28,11 @@ export default function SideNav(props){
             onClick={() => loadUser(el._id)}
         >
             <img style={styleImg} className={styles.img} src={`/images/dashboard/users/${el.name.first}.jpg`} />
-            <p className={`${styles.txt} ${opacityTxt}`} key={el.id}><strong> {el.name.first}</strong> {el.name.last}</p>
+            <p 
+                className={`${styles.txt} ${opacityTxt}`} 
+                key={el.id}
+            >
+                <strong> {el.name.first} </strong><span className={styles.lastName}> {el.name.last}</span></p>
 
         </section>);
 

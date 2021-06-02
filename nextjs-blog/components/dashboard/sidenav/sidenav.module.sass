@@ -1,7 +1,6 @@
 .list_container
     padding-top: 4vh
     padding-bottom: 4vh
-
 .containerList
     font-size: 13px
     transition: all 0.25s
@@ -34,3 +33,39 @@
     transition: all 0.1s ease-out
 .next:hover
     width: 18px
+@media only screen and (max-width: 700px )
+    .figure
+        display: none
+    .next
+        display: none
+    .list_container
+        padding-top: 0
+        padding-bottom: 0
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 2000
+        background: #fff
+    .containerList
+        display: flex
+        flex-direction: column
+        position: relative
+        border-radius: 5px
+    .img
+        width: 10vw
+        height: 100%
+    .lastName
+        display: none
+
+@media only screen and (min-width: 1200px )
+    .content
+        grid-template-columns: repeat(2, 1fr)
+    .container
+        height: 82%
+        width: 70%
+    .glassMorphFond
+        display: block
