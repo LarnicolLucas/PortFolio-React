@@ -5,14 +5,13 @@ import {useEffect, useState} from 'react'
 
 export default function Dashnoard(props){
 
-    const [data, setData] = useState({data: []})
+    const [data, setData] = useState([])
 
     useEffect(async ()=> {
         try {
            const res = await apiCall("/api/dashboard/readDocument/userNames");
 
            setData(res);
-           console.log(res)
 
         } catch(err){
             console.log(err)
