@@ -76,6 +76,8 @@ export default function Stats(props){
     return <>
         <section className={styles.container}>
 
+        <h1>Stats</h1>
+
         <svg width={size_circle} height={size_circle}>
 			<g>
 				<polygon fill={props.color} strokeLinejoin="round" points={points}></polygon>
