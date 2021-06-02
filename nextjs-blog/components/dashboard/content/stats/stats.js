@@ -58,13 +58,17 @@ export default function Stats(props){
         r={el.r}
         fill="none"
         stroke="#515151"
-    />)
-    const points = createPoints(props.points, size_circle);
-    const axisLabel = props.points.map((el, i)=> <Axis_label 
+    />);
+
+    const listPoints = props.data.map(el => el.value);
+
+    const points = createPoints(listPoints, size_circle);
+    const axisLabel = listPoints.map((el, i)=> <Axis_label 
+        technos={props.data.map(el => el.name)}
         key={i} 
         stat={el} 
         index={i} 
-        total={props.points.length} 
+        total={listPoints.length} 
         size={size_circle}
         fn={valueToPoint}
     />)

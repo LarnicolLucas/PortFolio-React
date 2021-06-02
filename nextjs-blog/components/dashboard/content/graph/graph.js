@@ -8,20 +8,6 @@ export default function Graph(props){
     const width = matches ? 200 : 250;
     const height = matches ? 125 : 175;
 
-    const coordonates = [
-        [0,100], 
-        [10, 50], 
-        [20, 50], 
-        [30, 50], 
-        [40, 50], 
-        [50, 100], 
-        [60, 50], 
-        [70, 40],
-        [80, 50],
-        [90, 50],
-        [100, 20]
-    ]
-
     const createPath = (coo, maxWidth, maxHeight) => {
 		
         let x = (el, maxW) => (el*maxW)/100;
@@ -81,7 +67,7 @@ export default function Graph(props){
 
     const legends = list_legends().map(el => <path key={el.id} d={el.path} stroke="grey" fill="transparent" />)
 
-    const path = createPath(coordonates, width, height)
+    const path = createPath(props.coordonates, width, height)
 
     return <>
 			<svg className={styles.svg} width={width} height={height} xmlns="http://www.w3.org/2000/svg">

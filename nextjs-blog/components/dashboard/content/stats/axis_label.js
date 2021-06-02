@@ -10,21 +10,11 @@ export default function Stats(props){
 
     const {x, y} = point();
 
-    const label= [
-        "React",
-        "Vue",
-        "CSS",
-        "NextJs",
-        "Node",
-        "SQLServer",
-        "MongoDB"
-    ]
-
     return <>
         <text
             className={styles.txt}
             x={x}
             y={y}
-        >{label[props.index]}</text>
+        >{props.technos[props.index]}</text>
     </>
 }

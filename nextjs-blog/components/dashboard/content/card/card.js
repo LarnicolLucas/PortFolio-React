@@ -16,14 +16,14 @@ export default function Card(props){
     return <>
         <figure className={styles.figure}>
 
-            <img style={{width: "80%"}} src="/images/face/total.svg"></img>
+            <img style={{width: "80%", borderRadius: "50%"}} src={`/images/dashboard/users/${props.src}.jpg`}></img>
 
         </figure>
         <figcaption className={styles.figure}>
-            <h5 style={{background: props.color}} className={styles.name}>Larnicol Lucas</h5>
+            <h5 style={{background: props.color}} className={styles.name}>{props.name}</h5>
         </figcaption>
         <p className={`${styles.container} ${styles.titre}`}>
-            Web devellopement
+            {props.title}
         </p>
         <section className={`${styles.container} ${styles.titre}`} >
             {infos}

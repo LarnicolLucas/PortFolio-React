@@ -42,10 +42,20 @@ export default function Dash(props){
     ];
 
     const list = [
-        {id: 0, child: <Card color={props.color} score={[5, 5, 33]} /> },
-        {id: 1, child: <Items color={props.color} /> },
-        {id: 2, child: <Stats color={props.color} points={[90, 80, 75, 60, 75, 55, 30]}/> },
-        {id: 3, child: <Graph color={props.color}/> }
+        {id: 0, child: <Card 
+            color={props.color} 
+            src={props.data[0].name.first} 
+            score={[
+                props.data[0].projects, 
+                props.data[0].experience, 
+                new Date(new Date() - new Date(props.data[0].birth)).getYear()
+            ]}
+            name={`${props.data[0].name.first} ${props.data[0].name.last}`}
+            title={props.data[0].job}
+         /> },
+        {id: 1, child: <Items color={props.color} list={props.data[0].technos} /> },
+        {id: 2, child: <Stats color={props.color} data={props.data[0].technos}/> },
+        {id: 3, child: <Graph coordonates={props.data[0].histo} color={props.color}/> }
     ];
 
     const contents = list.map(el => <article 

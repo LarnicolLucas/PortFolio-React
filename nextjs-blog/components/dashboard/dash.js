@@ -11,7 +11,7 @@ export default function Dash(props){
     const color= "#FF9822"
 
     const [sideNavOpen, setSideNavOpen] = useState(false);
-    const [userData, setUserData] = useState(props.data);
+    const [userData, setUserData] = useState([]);
 
     const upStateUserData = (data) => setUserData(data);
 
@@ -19,7 +19,8 @@ export default function Dash(props){
         width: !sideNavOpen ? "25%" : "6%"
     };
 
-    const content = props.data.length === 0 ? <Loader /> : <Content data={userData} color={color}/>
+    const content = props.data.length === 0 ? <Loader /> :
+        userData.length === 0 ?  <div> Click On User </div> : <Content data={userData} color={color}/>
 
     return <>
         <section className={`${styles.container} `}>
