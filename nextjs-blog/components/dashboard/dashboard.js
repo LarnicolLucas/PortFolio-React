@@ -21,7 +21,7 @@ export default function Dashnoard(props){
 
     return <>
         <main className={styles.container}>
-            <Dash props={data}/>
+            <Dash data={data}/>
         </main>
     </>
 }
