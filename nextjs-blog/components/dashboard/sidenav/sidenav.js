@@ -1,17 +1,12 @@
 import styles from './sidenav.module.sass'
+import apiCall from '../apiCall.js'
 
 import {useState} from 'react'
 
 export default function SideNav(props){
 
-        const list = [
-            {id:0, name: "Dashboard", src: "/images/dashboard/side/0.svg"},
-            {id:1, name: "History", src: "/images/dashboard/side/1.svg"},
-            {id:2, name: "Course", src: "/images/dashboard/side/2.svg"},
-            {id:3, name: "Items", src: "/images/dashboard/side/3.svg"}
-        ];
-
         const [button, setButton] = useState(false);
+        const [newData, setNewData] = useState([]);
 
         const styleText = {
             display: button ? "none" : "block"
@@ -19,11 +14,25 @@ export default function SideNav(props){
         const styleImg = {
             marginTop: button ? "10px" : "0",
             marginBottom: button ? "10px" : "0"
+        };
+        const loadUser = async (id) => { 
+            try {
+                const res = await apiCall(`/api/dashboard/readDocument/${id}`);
+                setNewData(res);
+                console.log(newData)
+            }catch(err){
+                console.log(err)
+            }
         }
 
-        const items = list.map(el => <section key={el.id} className={styles.containerList}>
-            <img style={styleImg} className={styles.img} src={el.src} />
-            <p style={styleText} key={el.id}> {el.name} </p>
+        const items = props.list.map(el => <section 
+            key={el.key} 
+            className={styles.containerList}
+            onClick={() => loadUser(el._id)}
+        >
+            <img style={styleImg} className={styles.img} src={`/images/dashboard/users/${el.name.first}.jpg`} />
+            <p style={styleText} key={el.id}> {el.name.first} {el.name.last} </p>
+
         </section>);
 
         const effectStyleButton = {
