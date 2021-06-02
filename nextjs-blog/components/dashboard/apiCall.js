@@ -6,7 +6,9 @@ export default async function ApiCall(src){
             //headers: { 'Content-Type': 'application/json' }
         });
         const list = await response.json();
-        return list
+
+        return list.data.map((el, i)=> Object.assign({}, el, {key: i}));
+
     }catch(err){
         console.log(err)
     }
