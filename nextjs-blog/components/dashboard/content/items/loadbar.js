@@ -18,8 +18,8 @@ export default function load(props){
     };
 
     useEffect(()=> {
-        gsap.fromTo(loadBarDom.current,{width: `0%`}, {width: `${props.value}%`, duration: 2, ease: "elastic.out( 1, 0.3)",})
-    }, [])
+        gsap.fromTo(loadBarDom.current, {width: `0%`}, {width: `${props.value}%`, duration: 2, ease: "elastic.out( 1, 0.3)",})
+    }, [props.value])
 
 
     return <>
