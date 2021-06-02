@@ -6,11 +6,9 @@ import {useState} from 'react'
 export default function SideNav(props){
 
         const [button, setButton] = useState(false);
-        const [newData, setNewData] = useState([]);
 
-        const styleText = {
-            display: button ? "none" : "block"
-        }
+        const opacityTxt = button ? styles.opacityTxt : "";
+
         const styleImg = {
             marginTop: button ? "10px" : "0",
             marginBottom: button ? "10px" : "0"
@@ -18,7 +16,6 @@ export default function SideNav(props){
         const loadUser = async (id) => { 
             try {
                 const res = await apiCall(`/api/dashboard/readDocument/${id}`);
-                setNewData(res);
                 props.upStateUserData(res)
             }catch(err){
                 console.log(err)
@@ -31,7 +28,7 @@ export default function SideNav(props){
             onClick={() => loadUser(el._id)}
         >
             <img style={styleImg} className={styles.img} src={`/images/dashboard/users/${el.name.first}.jpg`} />
-            <p style={styleText} key={el.id}> {el.name.first} {el.name.last} </p>
+            <p className={`${styles.txt} ${opacityTxt}`} key={el.id}><strong> {el.name.first}</strong> {el.name.last}</p>
 
         </section>);
 
