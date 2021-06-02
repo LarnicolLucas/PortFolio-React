@@ -2,17 +2,21 @@ import styles from './dash.module.sass'
 import glass from './glass.module.sass'
 import Sidenav from './sidenav/sidenav.js'
 import Content from './content/content.js'
+import Loader from '../utils/loader/loader.js'
 
 import {useState} from 'react'
 
-export default function Dash(prop){
+export default function Dash(props){
 
     const color= "#FF9822"
 
     const [sideNavOpen, setSideNavOpen] = useState(false);
     const styleNav = {
         width: !sideNavOpen ? "25%" : "6%"
-    }
+    };
+
+    const content = props.data.data.length === 0 ? <Loader /> : <Content list={props.data.data} color={color}/>
+
     return <>
         <section className={`${styles.container} `}>
             <img style={{ top: "-10%", left: "2%" }} className={styles.img} src="/images/dashboard/fond/0.svg" />
@@ -24,7 +28,7 @@ export default function Dash(prop){
                 <Sidenav color={color} onSideNavOpen={(bol)=>  setSideNavOpen(bol)}/>
             </aside>
             <article className={styles.content}>
-                <Content color={color}/>
+                {content}
             </article>
         </section>
     </>
