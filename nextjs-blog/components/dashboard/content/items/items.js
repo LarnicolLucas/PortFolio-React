@@ -13,6 +13,10 @@ export default function Item(props){
     return<>
         <section className={styles.container}>
 
+            <header>
+                <h1 style={{textAlign: "center"}}>Skills</h1>
+            </header>
+
             {list}
 
         </section>
