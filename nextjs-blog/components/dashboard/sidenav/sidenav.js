@@ -19,6 +19,7 @@ export default function SideNav(props){
             try {
                 const res = await apiCall(`/api/dashboard/readDocument/${id}`);
                 setNewData(res);
+                props.upStateUserData(res)
                 console.log(newData)
             }catch(err){
                 console.log(err)

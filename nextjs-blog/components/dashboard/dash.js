@@ -11,11 +11,15 @@ export default function Dash(props){
     const color= "#FF9822"
 
     const [sideNavOpen, setSideNavOpen] = useState(false);
+    const [userData, setUserData] = useState(props.data);
+
+    const upStateUserData = (data) => setUserData(data);
+
     const styleNav = {
         width: !sideNavOpen ? "25%" : "6%"
     };
 
-    const content = props.data.data.length === 0 ? <Loader /> : <Content list={props.data.data} color={color}/>
+    const content = props.data.length === 0 ? <Loader /> : <Content data={userData} color={color}/>
 
     return <>
         <section className={`${styles.container} `}>
@@ -25,7 +29,12 @@ export default function Dash(props){
             <img style={{ top: "70%", left: "50%" }} className={styles.img} src="/images/dashboard/fond/0.svg" />
             <section className={`${styles.glassMorphFond} ${glass.glass}`}></section>
             <aside className={styles.sideNav} style={styleNav}>
-                <Sidenav color={color} onSideNavOpen={(bol)=>  setSideNavOpen(bol)}/>
+                <Sidenav 
+                    color={color} 
+                    onSideNavOpen={(bol)=> setSideNavOpen(bol)}
+                    list={props.data}
+                    upStateUserData={upStateUserData}
+                />
             </aside>
             <article className={styles.content}>
                 {content}
