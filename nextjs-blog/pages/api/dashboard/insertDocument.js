@@ -1,33 +1,34 @@
 export default function handler(req, res){
 
-    const connectMongo = require("dbConnect");
+    /*const connectMongo = require("dbConnect");
 
     const db_name = "dashboard";
 
     const Usher = {
-        "name": { "first": "Usher", "last": "Raymond IV" },
-        "birth": new Date(1978, 10, 14),
-        "experience": new Date(2020, 6, 1),
-        "projects": 2,                                                                                                                                                                                                                                                     
+        "name": { "first": "Mario", "last": "Miyamoto" },
+        "birth": new Date(1982, 1, 1),
+        "experience": new Date(2010, 8, 1),
+        "projects": 4,                                                                                                                                                                                                                                                     
         "technos": [ 
-            {name: "PHP", value: 90}, 
-            {name: "Python", value: 40},
-            {name: "C#", value: 63},
-            {name: "C++", value: 20}
+            {name: "VIM", value: 100}, 
+            {name: "JAVA", value: 80},
+            {name: "C", value: 90},
+            {name: "PHP", value: 70},
+            {name: "Visual Basic", value: 10}
         ],
-        "job": "Backend DEV",
+        "job": "Software engineer",
         "histo": [
             [0,90], 
-            [10, 20], 
-            [20, 50], 
-            [30, 40], 
-            [40, 10], 
-            [50, 100], 
-            [60, 30], 
-            [70, 30],
-            [80, 70],
-            [90, 20],
-            [100, 70]
+            [10, 80], 
+            [20, 70], 
+            [30, 60], 
+            [40, 60], 
+            [50, 60], 
+            [60, 10], 
+            [70, 10],
+            [80, 20],
+            [90, 10],
+            [100, 30]
         ]
     }
 
@@ -50,5 +51,6 @@ export default function handler(req, res){
     }
 
     connectMongo(query);
+    */
 }
 
