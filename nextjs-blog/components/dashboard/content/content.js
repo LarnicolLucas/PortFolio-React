@@ -41,14 +41,16 @@ export default function Dash(props){
         }
     ];
 
+    const convertDate = (date) => (new Date()).getFullYear() - (new Date(date)).getFullYear()
+
     const list = [
         {id: 0, child: <Card 
             color={props.color} 
             src={props.data[0].name.first} 
             score={[
                 props.data[0].projects, 
-                props.data[0].experience, 
-                new Date(new Date() - new Date(props.data[0].birth)).getYear()
+                convertDate(props.data[0].experience), 
+                convertDate(props.data[0].birth)
             ]}
             name={`${props.data[0].name.first} ${props.data[0].name.last}`}
             title={props.data[0].job}
