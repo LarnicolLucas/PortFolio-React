@@ -29,7 +29,7 @@ export default function Intro(props){
     return <>
         <article style={style}>
             <section style={style2} ref={txt}>
-                Select An User 
+                Select User 
             </section>    
         </article>
     </>
