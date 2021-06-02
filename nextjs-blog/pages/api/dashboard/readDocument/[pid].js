@@ -1,8 +1,8 @@
 export default function handler(req, res){
 
-    const { pid } = req.query
+    const {ObjectID} = require("mongodb");
 
-    //const target = pid == "userNames" ? {name : "?"} : {}
+    const { pid } = req.query
 
     const connectMongo = require("dbConnect");
 
@@ -15,9 +15,11 @@ export default function handler(req, res){
 
             const col = db.collection("people");
 
-            const cursor = await col.find({}).project({name: 1, _id: 0}).toArray();
+            const result = pid == "userNames" ? 
+                await col.find({}).project({name: 1}).toArray() :
+                await col.find({_id: new ObjectID(pid)}).toArray();
 
-            res.json({data: cursor})
+            res.json({data: result})
 
         }catch(err){
             console.log(err)
