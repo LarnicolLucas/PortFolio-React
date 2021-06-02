@@ -1,5 +1,9 @@
 export default function handler(req, res){
 
+    const { pid } = req.query
+
+    //const target = pid == "userNames" ? {name : "?"} : {}
+
     const connectMongo = require("dbConnect");
 
     const db_name= "dashboard"
@@ -11,11 +15,9 @@ export default function handler(req, res){
 
             const col = db.collection("people");
 
-            const myDoc = await col.find({});
+            const cursor = await col.find({}).project({name: 1, _id: 0}).toArray();
 
-            res.json(myDoc)
-
-            //await myDoc.forEach(el => console.log(el))
+            res.json({data: cursor})
 
         }catch(err){
             console.log(err)
