@@ -4,6 +4,8 @@ import Sidenav from './sidenav/sidenav.js'
 import Content from './content/content.js'
 import Loader from '../utils/loader/loader.js'
 
+import Intro from './intro.js'
+
 import {useState} from 'react'
 
 export default function Dash(props){
@@ -20,7 +22,7 @@ export default function Dash(props){
     };
 
     const content = props.data.length === 0 ? <Loader /> :
-        userData.length === 0 ?  <div> Click On User </div> : <Content data={userData} color={color}/>
+        userData.length === 0 ?  <Intro /> : <Content data={userData} color={color}/>
 
     return <>
         <section className={`${styles.container} `}>
