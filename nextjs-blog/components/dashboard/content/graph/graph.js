@@ -6,7 +6,7 @@ export default function Graph(props){
     const matches = mediaQuery(700)
 
     const width = matches ? 200 : 250;
-    const height = matches ? 125 : 175;
+    const height = matches ? 100 : 175;
 
     const createPath = (coo, maxWidth, maxHeight) => {
 		
@@ -70,12 +70,15 @@ export default function Graph(props){
     const path = createPath(props.coordonates, width, height)
 
     return <>
-			<svg className={styles.svg} width={width} height={height} xmlns="http://www.w3.org/2000/svg">
+      <section>
+        <h1 className={styles.title} >Histo</h1>
+        <svg className={styles.svg} width={width} height={height} xmlns="http://www.w3.org/2000/svg">
 
-				<path d={path} stroke={props.color} fill="transparent" strokeWidth="3"/>
-				<g>
-                    {legends}
-				</g>
-			</svg>
-        </>
+          <path d={path} stroke={props.color} fill="transparent" strokeWidth="3"/>
+          <g>
+              {legends}
+          </g>
+        </svg>
+      </section>
+    </>
 }
