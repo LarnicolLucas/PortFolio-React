@@ -1,5 +1,7 @@
 import styles from './basket.module.sass'
-import {useEffect, useState} from 'react'
+import stylesBasket from '../block_institut.module.sass'
+import {useEffect, useState, useRef} from 'react'
+import gsap from 'gsap/gsap-core';
 
 
 export default function Basket(props){
@@ -7,10 +9,15 @@ export default function Basket(props){
     const [scrolled, setScrolled] = useState("");
     const [openMenu, setOpenMenu] = useState(false);
 
+    const clickedBasket = useRef();
+
     const scrollAction = (e)=> window.scrollY > 0 ? setScrolled(styles.scrolled) : setScrolled("");
 
     useEffect(()=> {
             window.addEventListener('scroll', scrollAction);
+            if(props.trig){
+                gsap.fromTo(clickedBasket.current, {scale: 1, opacity: 1}, {scale: 1.2, opacity: 0})
+            }
             return () => window.removeEventListener('scroll', scrollAction);
         }
     );
@@ -40,7 +47,8 @@ export default function Basket(props){
     return <>
         <aside className={styles.container+" "+scrolled} style={basketStyle}>
 
-            <img style={{width: "30px", cursor: "pointer"}} src="/images/peau-line/basket.svg" onClick={openClose} />
+            <img className={stylesBasket.basket} src="/images/peau-line/basket.svg" onClick={openClose} />
+ 
             
             <section className={styles.gridContainer} style={basketStyleGrid}>
 
