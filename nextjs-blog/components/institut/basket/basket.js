@@ -43,6 +43,13 @@ export default function Basket(props){
         price: acc.price + cur.price,
     }), {qty: 0, price: 0});
 
+    const priceCloseMenu= openMenu ? 
+    <></> :
+    <section className={styles.raw}>
+        {total.price} $
+    </section> 
+    ;
+
 
     return <>
         <aside className={styles.container+" "+scrolled} style={basketStyle}>
@@ -77,6 +84,8 @@ export default function Basket(props){
                 <div className={styles.buy}><strong>Buy</strong></div>
 
             </section>
+
+            {priceCloseMenu}
 
 
         </aside>
