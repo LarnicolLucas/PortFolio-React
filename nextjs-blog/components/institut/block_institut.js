@@ -58,6 +58,14 @@ export default function Block_institut(props) {
                         {props.description}
                     </figcaption>
                 </figure>
+                <section className={styles.buy}>
+                    <p>{props.price}$</p>
+                    <figure style={{padding: "0", margin: "0"}}>
+                        <img className={styles.basket} src="/images/peau-line/basket.svg"
+                            onClick={()=> props.upState({item: props.label, price: props.price, qty: 1})}
+                        />
+                    </figure>
+                </section>
             </article>
         </>
     )

@@ -1,0 +1,40 @@
+.container
+    position: fixed
+    top: 30vh
+    right: 0
+    border-radius: 16px 0 0 16px
+    background: #fff
+    font-size: 0.7em
+    transition: all 0.2s ease-out
+    box-shadow: 10px 10px 10px #515151
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.gridContainer
+    display: grid
+    margin: 0
+    padding: 0
+    grid-template-columns: repeat(3, 1fr)
+.scrolled
+    top: 9vh
+.raw
+    padding: 10px
+    justify-self: center
+.col0
+    grid-column-start: 1
+    grid-column-end: 2
+.col1
+    grid-column-start: 2
+    grid-column-end: 3
+.col2
+    grid-column-start: 3
+    grid-column-end: 4
+.buy
+    padding: 0.5em 1.5em 0.5em 1.5em
+    background: #f7b1c9
+    border-radius: 20px
+    text-align: center
+    grid-column-start: 3
+    grid-column-end: 4
+    cursor: pointer
