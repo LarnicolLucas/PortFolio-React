@@ -21,7 +21,9 @@ export default function Dash(props){
 
 
     const content = props.data.length === 0 ? <Loader /> :
-        userData.length === 0 ?  <Intro /> : <Content data={userData} color={color}/>
+        userData.length === 0 ?  <></> : <Content data={userData} color={color}/>
+
+    const intro = userData.length === 0 ?  <Intro /> : <></>
 
     return <>
         <section className={`${styles.container} `}>
@@ -31,6 +33,7 @@ export default function Dash(props){
             <img style={{ top: "70%", left: "50%" }} className={styles.img} src="/images/dashboard/fond/0.svg" />
             <section className={`${styles.glassMorphFond} ${glass.glass}`}></section>
             <aside className={`${styles.sideNav} ${styleNav}`}>
+                {intro}
                 <Sidenav 
                     color={color} 
                     onSideNavOpen={(bol)=> setSideNavOpen(bol)}
