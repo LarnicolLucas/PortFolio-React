@@ -3,7 +3,10 @@ import styles from './navItem.module.sass'
 export default function NavItem(props){
 
     const styleSelected= {
-        background: props.color
+        background: props.selected ? props.color : "#eee"
+    }
+    const styleSelectedDiv= {
+        background: props.selected ? props.color : "none"
     }
 
     return <>
@@ -16,7 +19,7 @@ export default function NavItem(props){
                 <h5>{props.data.name}</h5>
             </section>
 
-            <div className={styles.divRounded} style={styleSelected}></div>
+            <div className={styles.divRounded} style={styleSelectedDiv}></div>
 
         </article>
     </>
