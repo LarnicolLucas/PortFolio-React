@@ -1,7 +1,9 @@
 import styles from './content.module.sass'
 
-export default function SideBar(){
+export default function Content(props){
     return <>
+        <section className={styles.container_}>
 
+        </section>
     </>
 }
