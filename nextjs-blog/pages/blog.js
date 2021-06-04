@@ -12,10 +12,14 @@ export default function index(props){
             <Head>
                 <title>Blog</title>
             </Head>
-            <main className={styles.container_}>
+            <main className={styles.background_}>
 
-                <Nav />
-                <Main />
+                <section className={styles.container_}>
+
+                    <Nav />
+                    <Main />
+
+                </section>
 
             </main>
         </Layout>
