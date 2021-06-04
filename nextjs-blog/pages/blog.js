@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 
 import Nav from '../components/blog/nav/nav.js'
+import Main from '../components/blog/main/main.js'
 
 export default function index(props){
 
@@ -11,7 +12,12 @@ export default function index(props){
             <Head>
                 <title>Blog</title>
             </Head>
-            <Nav />
+            <main className={styles.container_}>
+
+                <Nav />
+                <Main />
+
+            </main>
         </Layout>
     </>
 }
