@@ -5,11 +5,11 @@ import Content from './content/content.js'
 
 export default function SideBar(){
     return <>
-        <aside className={styles.container_}>
+        <section className={styles.container_}>
 
             <SideNav />
             <Content />
 
-        </aside>
+        </section>
     </>
 }
