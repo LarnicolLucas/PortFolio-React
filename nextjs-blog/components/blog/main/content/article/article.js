@@ -8,7 +8,7 @@ export default function Article(props){
     };
 
     return <>
-        <article className={styles.container_}>
+        <article className={styles.container_} onClick={()=> props.readArticle(props.data._id)}>
 
             <figure className={styles.figure_}>
 

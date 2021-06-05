@@ -7,7 +7,7 @@ import Box from './box/box.js'
 export default function SideBar(props){
 
     const askNewArticle = (bol) => props.askNewArticle(bol);
-    const changeFilter = (tag) => props.changeFilter(tag);
+    const changeFilter = (bol, tag) => props.changeFilter(bol, tag);
 
     const items = [
         {id: 0, name: 'Home', tag: '', clicked: true},
