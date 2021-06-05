@@ -18,7 +18,7 @@ export default function Box(props){
             </section>
 
             <figure className={styles.figure_}>
-                <img className={styles.img_} src="/images/blog/icons/send.svg" />
+                <img className={styles.img_} src="/images/blog/illustration.svg" />
             </figure>
 
         </article>
