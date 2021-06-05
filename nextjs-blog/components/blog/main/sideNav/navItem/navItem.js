@@ -1,7 +1,5 @@
 import styles from './navItem.module.sass'
 
-import {useState} from 'react'
-
 export default function NavItem(props){
 
 
@@ -14,10 +12,16 @@ export default function NavItem(props){
     const stylePara= {
         color: props.clicked ? "#000" : "#81878B"
     };
-    const svg = props.clicked ? "/images/blog/icons/"+props.data.id+"W.svg" : "/images/blog/icons/"+props.data.id+".svg"
+    const svg = props.clicked ? "/images/blog/icons/"+props.data.id+"W.svg" : "/images/blog/icons/"+props.data.id+".svg";
+
+    const buttonClicked= ()=> {
+        props.changeFilter(props.data.tag);
+        props.fnClicked(props.id);
+        props.askNewArticle(false)
+    }
 
     return <>
-        <article className={styles.container_} onClick={()=> props.fnClicked(props.id)}>
+        <article className={styles.container_} onClick={()=> buttonClicked()}>
 
             <section className={styles.containerImgText}>
                 <figure className={styles.figure_} style={styleSelected}>

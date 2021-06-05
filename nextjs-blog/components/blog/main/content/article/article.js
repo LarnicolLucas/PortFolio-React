@@ -12,23 +12,23 @@ export default function Article(props){
 
             <figure className={styles.figure_}>
 
-                <img className={styles.img_} src={props.src} />
+                <img className={styles.img_} src={props.data.src} />
 
             </figure>
 
             <figcaption className={styles.figcaption_}>
 
                 <p style={styleTag} className={styles.tag_}>
-                    {props.tag}
+                    {props.data.tag}
                 </p>
 
                 <h5>
 
-                    {props.title}
+                    {props.data.title}
 
                 </h5>
 
-                <Author date={props.date} author={props.author}/>
+                <Author date={props.data.date} author={props.data.author}/>
             </figcaption>
 
 
