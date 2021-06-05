@@ -16,7 +16,7 @@ export default function SideBar(props){
         <section className={styles.container_}>
 
 
-            <div className={styles["field"]}>
+            <div className={styles["field"]+" "+styles["field_"]}>
                 <label style={customSize} className={styles["label"]}>Author</label>
                 <div className={styles["control"]}>
                     <input style={customSize} className={styles["input"]+" "+styles["is-rounded"]} type="text" placeholder="Name" />
