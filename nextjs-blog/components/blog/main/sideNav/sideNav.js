@@ -33,6 +33,8 @@ export default function SideBar(props){
 
     const [list, setList] = useState(createJSXList(items));
 
+    const askNewArticle = (bol) => props.askNewArticle(bol)
+
 
     return <>
         <aside className={styles.container_}>
@@ -43,7 +45,7 @@ export default function SideBar(props){
 
             </section>
 
-            <Box color={props.color}/>
+            <Box color={props.color} askNewArticle={askNewArticle}/>
 
         </aside>
     </>
