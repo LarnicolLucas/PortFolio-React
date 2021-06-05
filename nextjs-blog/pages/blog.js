@@ -7,6 +7,9 @@ import Main from '../components/blog/main/main.js'
 
 export default function index(props){
 
+    const color= "#4A9FCD";
+    
+
   return <>
         <Layout>
             <Head>
@@ -16,8 +19,8 @@ export default function index(props){
 
                 <section className={styles.container_}>
 
-                    <Nav />
-                    <Main />
+                    <Nav color={color}/>
+                    <Main color={color}/>
 
                 </section>
 

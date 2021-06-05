@@ -1,16 +1,19 @@
 import styles from './navItem.module.sass'
+import {useState} from 'react'
 
 export default function NavItem(props){
 
+    const [selected, setSelected] = useState(false)
+
     const styleSelected= {
-        background: props.selected ? props.color : "#eee"
+        background: selected ? props.color : "#eee"
     }
     const styleSelectedDiv= {
-        background: props.selected ? props.color : "none"
+        background: selected ? props.color : "none"
     }
 
     return <>
-        <article className={styles.container_}>
+        <article className={styles.container_} onClick={()=> setSelected(true)}>
 
             <section className={styles.containerImgText}>
                 <figure className={styles.figure_} style={styleSelected}>

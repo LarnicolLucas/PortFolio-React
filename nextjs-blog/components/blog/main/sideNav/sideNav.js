@@ -8,7 +8,7 @@ export default function SideBar(props){
         {id: 0, name: 'Home'},
         {id: 1, name: 'LifeStyle'},
         {id: 2, name: 'CodeDiary'},
-    ].map(el => <NavItem key={el.id} data={el} color={props.color}/>)
+    ].map(el => <NavItem key={el.id} data={el} color={props.color} />)
 
     return <>
         <aside className={styles.container_}>
