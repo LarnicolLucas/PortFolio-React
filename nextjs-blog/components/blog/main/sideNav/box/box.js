@@ -13,7 +13,7 @@ export default function Box(props){
 
                 <p className={styles.para}>Somthing on your mind ?</p>
 
-                <button className={styles.button+" "+styles["is-rounded"]+" "+styles["is-small"]}>Write Article</button>
+                <button className={styles.button+" "+styles["is-rounded"]+" "+styles.button_}>Write Article</button>
 
             </section>
 
