@@ -7,7 +7,7 @@ import Box from './box/box.js'
 export default function SideBar(props){
 
     const items = [
-        {id: 0, name: 'Home', clicked: false},
+        {id: 0, name: 'Home', clicked: true},
         {id: 1, name: 'LifeStyle', clicked: false},
         {id: 2, name: 'CodeDiary', clicked: false},
     ];
@@ -16,7 +16,7 @@ export default function SideBar(props){
 
         const newItems = items.map(el=> el.id === id ? 
             Object.assign({}, el, {clicked: true}) :
-            el
+            Object.assign({}, el, {clicked: false})
         )
 
         return setList(createJSXList(newItems))
