@@ -3,17 +3,16 @@ import {useState} from 'react'
 
 export default function NavItem(props){
 
-    const [selected, setSelected] = useState(false)
 
     const styleSelected= {
-        background: selected ? props.color : "#eee"
+        background: props.clicked ? props.color : "#eee"
     }
     const styleSelectedDiv= {
-        background: selected ? props.color : "none"
+        background: props.clicked ? props.color : "none"
     }
 
     return <>
-        <article className={styles.container_} onClick={()=> setSelected(true)}>
+        <article className={styles.container_} onClick={()=> props.fnClicked(props.id)}>
 
             <section className={styles.containerImgText}>
                 <figure className={styles.figure_} style={styleSelected}>
