@@ -10,7 +10,8 @@ export default function SideBar(props){
         date: new Date(),
         content: "",
         name: "",
-        img: ""
+        img: "",
+        src: ""
     };
 
     const [dataToSend, setDataToSend] = useState(datas);
@@ -68,6 +69,17 @@ export default function SideBar(props){
                 />
                 </div>
                 <label style={customSize} className={styles["label"]}>Picture</label>
+                <div className={styles["control"]}>
+                    <input
+                        onChange={handleInputs}
+                        name="src" 
+                        style={customSize} 
+                        className={styles["input"]+" "+styles["is-rounded"]} 
+                        type="text" 
+                        placeholder="Html Link" 
+                    />
+                </div>
+                <label style={customSize} className={styles["label"]}>Author's Picture</label>
                 <div className={styles["control"]}>
                     <input
                         onChange={handleInputs}
