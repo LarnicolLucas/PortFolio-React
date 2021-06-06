@@ -1,7 +1,21 @@
 import ApiCall from '../../../apiCallPost';
-import styles from './newArticle.module.sass'
+import styles from './newArticle.module.sass';
+import {useState} from 'react'
 
 export default function SideBar(props){
+
+    const datas = {
+        tag: "",
+        title: "",
+        date: new Date(),
+        content: "",
+        name: "",
+        img: ""
+    };
+
+    const [dataToSend, setDataToSend] = useState(datas);
+
+    const handleInputs = (e) => setDataToSend(Object.assign({}, dataToSend, {[e.target.name] : e.target.value}))
 
     const customSize = {
         fontSize: "0.7rem",
@@ -13,7 +27,7 @@ export default function SideBar(props){
         {id: 1, name: "CodeDiary", tag: "codeDiary"}
     ].map(el=> <option style={customSize} key={el.id}> {el.name} </option>);
 
-    const Create = () => ApiCall({test: "tested"})
+    const Create = () => ApiCall(dataToSend)
 
     return <>
         <section className={styles.container_}>
@@ -22,27 +36,57 @@ export default function SideBar(props){
             <div className={styles["field"]+" "+styles["field_"]}>
                 <label style={customSize} className={styles["label"]}>Author</label>
                 <div className={styles["control"]}>
-                    <input style={customSize} className={styles["input"]+" "+styles["is-rounded"]} type="text" placeholder="Name" />
+                    <input
+                        onChange={handleInputs}
+                        name="name" 
+                        style={customSize} 
+                        className={styles["input"]+" "+styles["is-rounded"]} 
+                        type="text" 
+                        placeholder="Name" 
+                    />
                 </div>
                 <label style={customSize} className={styles["label"]}>Tag</label>
                 <div className={styles["control"]}>
                     <div style={customSize} className={styles["select"]+" "+styles["is-rounded"]} type="text" placeholder="Tag">
-                    <select>
+                    <select 
+                        onChange={handleInputs} 
+                        name="tag" 
+                    >
                         {tags}
                     </select>
                     </div>
                 </div>
                 <label style={customSize} className={styles["label"]}>Title</label>
                 <div className={styles["control"]}>
-                    <input style={customSize} className={styles["input"]+" "+styles["is-rounded"]} type="text" placeholder="Description" />
+                    <input
+                    onChange={handleInputs}
+                    name="title"
+                    style={customSize} 
+                    className={styles["input"]+" "+styles["is-rounded"]} 
+                    type="text" 
+                    placeholder="Description" 
+                />
                 </div>
                 <label style={customSize} className={styles["label"]}>Picture</label>
                 <div className={styles["control"]}>
-                    <input style={customSize} className={styles["input"]+" "+styles["is-rounded"]} type="text" placeholder="Html Link" />
+                    <input
+                        onChange={handleInputs}
+                        name="img" 
+                        style={customSize} 
+                        className={styles["input"]+" "+styles["is-rounded"]} 
+                        type="text" 
+                        placeholder="Html Link" 
+                    />
                 </div>
                 <label style={customSize} className={styles["label"]}>Content</label>
                 <div className={styles["control"]}>
-                    <textarea style={customSize} className={styles["textarea"]} placeholder="Content"></textarea>
+                    <textarea
+                        onChange={handleInputs}
+                        name="content" 
+                        style={customSize} 
+                        className={styles["textarea"]} 
+                        placeholder="Content"
+                    ></textarea>
                 </div>
                 <a className={styles["button"]+" "+styles["is-rounded"]+" "+styles.button_} onClick={Create}>Send</a>
             </div>
