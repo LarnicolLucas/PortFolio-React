@@ -4,7 +4,7 @@ const Get = async (req, res)=> {
 
     const {ObjectID} = require("mongodb");
     const { pid } = req.query;
-    const _id = new ObjectID(pid);
+    const _id = pid === "allArticles" ? "allArticles" : new ObjectID(pid);
 
     const query = async (client)=> {
         try{
@@ -13,7 +13,10 @@ const Get = async (req, res)=> {
     
             const col = db.collection("article");
     
-            const result = await col.find({_id: _id}).toArray();
+            const result = _id === "allArticles" ? 
+                await col.find({}).project({content: 0}).toArray() :
+                await col.find({_id: _id}).toArray()
+            ;
     
         return res.json({data: result})
     
