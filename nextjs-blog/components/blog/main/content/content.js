@@ -39,7 +39,7 @@ export default function Content(props){
         <NewArticle /> :
         props.tagFilter.active ?
             articles :
-            <ReadArticle data={articleDatas.filter(el => el._id === readPage)[0]} />
+            <ReadArticle color={props.color} data={articleDatas.filter(el => el._id === readPage)[0]} />
     ;
     return <>
         <section className={styles.container_}>
