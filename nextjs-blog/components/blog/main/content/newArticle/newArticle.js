@@ -1,3 +1,4 @@
+import ApiCall from '../../../apiCallPost';
 import styles from './newArticle.module.sass'
 
 export default function SideBar(props){
@@ -11,6 +12,8 @@ export default function SideBar(props){
         {id: 0, name: "LifeStyle", tag: "lifeStyle"},
         {id: 1, name: "CodeDiary", tag: "codeDiary"}
     ].map(el=> <option style={customSize} key={el.id}> {el.name} </option>);
+
+    const Create = () => ApiCall({test: "tested"})
 
     return <>
         <section className={styles.container_}>
@@ -41,7 +44,7 @@ export default function SideBar(props){
                 <div className={styles["control"]}>
                     <textarea style={customSize} className={styles["textarea"]} placeholder="Content"></textarea>
                 </div>
-                <a className={styles["button"]+" "+styles["is-rounded"]+" "+styles.button_}>Send</a>
+                <a className={styles["button"]+" "+styles["is-rounded"]+" "+styles.button_} onClick={Create}>Send</a>
             </div>
 
         </section>
