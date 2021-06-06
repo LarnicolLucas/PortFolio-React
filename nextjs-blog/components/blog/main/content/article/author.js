@@ -4,7 +4,7 @@ import styles from './author.module.sass'
 export default function author(props){
 
     return <>
-        <article className={styles.container_}>
+        <article style={props.style} className={styles.container_}>
 
                 <img className={styles.img_} src={props.author.img} />
 

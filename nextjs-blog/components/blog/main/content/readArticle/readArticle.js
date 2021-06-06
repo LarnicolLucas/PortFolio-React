@@ -12,7 +12,7 @@ export default function Read(props){
             <figure className={styles.figure_}>
                 <img className={styles.img_} src={props.data.src} />
             </figure>
-            <Author author={props.data.author} date={props.data.date}/>
+            <Author style={{justifyContent: "right", paddingRight: "3%"}} author={props.data.author} date={props.data.date}/>
             
             <p>{props.data.content}</p>
             
