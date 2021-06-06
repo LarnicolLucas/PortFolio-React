@@ -11,7 +11,7 @@ export default function Read(props){
             <figure className={styles.figure_}>
                 <img className={styles.img_} src={props.data.src} />
             </figure>
-            <Author style={{justifyContent: "right", paddingRight: "3%"}} author={props.data.author} date={props.data.date}/>
+            <Author style={{justifyContent: "right", paddingRight: "3%"}} name={props.data.name} img={props.data.img} date={props.data.date}/>
             
             <p className={styles.para_}>{props.data.content}</p>
 

@@ -16,16 +16,14 @@ export default function Content(props){
         setReadPage(id)}
 
     const articleDatas = [{
-        id:0,
+        id: 0,
         _id: "B0X4f4g6",
-        src:"/images/blog/articles/0.jpg",
-        tag:"codeDiary",
-        title:"The day where i code my own BLOG... And everything goes fine",
-        date:"10/12/2012",
-        author:{ 
-            name: "Lucas Larnicol",
-            img: "/images/face/total.svg"
-        },
+        src: "/images/blog/articles/0.jpg",
+        tag: "codeDiary",
+        title: "The day where i code my own BLOG... And everything goes fine",
+        date: "10/12/2012",
+        name: "Lucas Larnicol",
+        img: "/images/face/total.svg",
         content: "Contenu ici. Lorem BLABLABAL"      
     }];
 

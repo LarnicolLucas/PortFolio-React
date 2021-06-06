@@ -28,7 +28,7 @@ export default function Article(props){
 
                 </h5>
 
-                <Author date={props.data.date} author={props.data.author}/>
+                <Author date={props.data.date} name={props.data.name} img={props.data.img}/>
             </figcaption>
 
 
