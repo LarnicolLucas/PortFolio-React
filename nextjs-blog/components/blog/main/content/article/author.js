@@ -3,6 +3,14 @@ import styles from './author.module.sass'
 
 export default function author(props){
 
+    const dateFormat = (raw) => {
+
+        const ymd = raw.split("T");
+        const array = ymd[0].split("-")
+
+        return `${array[2]}/${array[1]}/${array[0]}`
+    }
+
     return <>
         <article style={props.style} className={styles.container_}>
 
@@ -10,7 +18,7 @@ export default function author(props){
 
             <figcaption className={styles.figcaption_}>
                 <h5 className={styles.title}> {props.name} </h5>
-                <p className={styles.date}>{props.date}</p>
+                <p className={styles.date}>{dateFormat(props.date)}</p>
             </figcaption>
         </article>
     </>
