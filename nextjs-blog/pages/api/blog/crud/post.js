@@ -4,8 +4,6 @@ const Post = async (req, res)=> {
 
     const body = req.body
 
-    const bodyWidthDate = Object.assign({}, body, {date: new Date(Date.now()).toISOString()})
-
     const query = async (client)=> {
         try{
     
