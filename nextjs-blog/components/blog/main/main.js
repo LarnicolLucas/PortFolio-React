@@ -16,7 +16,13 @@ export default function SideBar(props){
         <section className={styles.container_}>
 
             <SideNav color={props.color} askNewArticle={askNewArticle} changeFilter={changeFilter}/>
-            <Content color={props.color} newArticle={newArticle} changeFilter={changeFilter} tagFilter={tagFilter}/>
+            <Content 
+                color={props.color} 
+                askNewArticle={askNewArticle}
+                newArticle={newArticle} 
+                changeFilter={changeFilter} 
+                tagFilter={tagFilter}
+            />
 
         </section>
     </>

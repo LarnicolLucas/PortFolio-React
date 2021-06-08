@@ -6,9 +6,9 @@ import ApiCallDel from '../../../apiCallDel.js'
 export default function Read(props){
 
     const deleteFn = async () => {
-        console.log(props.data)
         try {
             const res = await ApiCallDel(props.data._id);
+            props.changeFilter()
         }catch(err){
             console.log(err)
         }

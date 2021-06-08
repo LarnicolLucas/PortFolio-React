@@ -12,9 +12,17 @@ import Loader from '../../../utils/loader/loader.js'
 export default function Content(props){
 
     const [readPage, setReadPage] = useState(0);
+
     const readArticle = (id) => {
+        setReadPage(id)
         props.changeFilter(false, 0);
-        setReadPage(id)}
+    };
+
+    const redirectionAfterAction = () => {
+
+        props.changeFilter(true, "");
+        props.askNewArticle(false);
+    };
 
     const [articleDatas, setArticleDatas] = useState([]);
 
@@ -24,18 +32,24 @@ export default function Content(props){
         mapListArticle(articleDatas.filter(el=> el.tag === props.tagFilter.tag)) :
         mapListArticle(articleDatas);
 
-    const test = props.newArticle ? 
-        <NewArticle /> :
-        props.tagFilter.active ?
-            articles :
-            <ReadArticle color={props.color} data={articleDatas.filter(el => el._id === readPage)[0]} />
-    ;
+    const readArticles = <ReadArticle 
+        color={props.color} 
+        data={articleDatas.filter(el => el._id === readPage)[0]} 
+        changeFilter={redirectionAfterAction}
+    />
 
-    const [loader, setLoader] = useState(<Loader />)
+    const [loader, setLoader] = useState(<Loader />);
+
+    const test = props.newArticle ? 
+    <NewArticle changeFilter={redirectionAfterAction}/> :
+    props.tagFilter.active ?
+        articles :
+        readArticles
+    ;   
+
 
     useEffect(async ()=> {
         try {
-            setArticleDatas([]);
             setLoader(<Loader />);
             const res = await ApiCallGet("allArticles");
             setLoader("");
@@ -44,7 +58,7 @@ export default function Content(props){
         }catch(err){
             console.log(err)
         }
-    }, [props.tagFilter]);
+    }, [props.newArticle, props.tagFilter.active]);
 
     return <>
         <section className={styles.container_}>

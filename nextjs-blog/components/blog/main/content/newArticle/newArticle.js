@@ -28,7 +28,15 @@ export default function SideBar(props){
         {id: 1, name: "CodeDiary", tag: "codeDiary"}
     ].map(el=> <option style={customSize} key={el.id} value={el.tag}> {el.name} </option>);
 
-    const Create = () => ApiCall(dataToSend)
+    const Create = async () => {
+        try {
+            
+            const res = await ApiCall(dataToSend);
+            props.changeFilter()
+        }catch(err){
+            console.log(err)
+        }
+    };
 
     return <>
         <section className={styles.container_}>
