@@ -7,6 +7,8 @@ export default function Article(props){
         color: "#81878B"
     };
 
+    const toUpperFirst = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+
     return <>
         <article className={styles.container_} onClick={()=> props.readArticle(props.data._id)}>
 
@@ -19,7 +21,7 @@ export default function Article(props){
             <figcaption className={styles.figcaption_}>
 
                 <p style={styleTag} className={styles.tag_}>
-                    {props.data.tag}
+                    {toUpperFirst(props.data.tag)}
                 </p>
 
                 <h5>
