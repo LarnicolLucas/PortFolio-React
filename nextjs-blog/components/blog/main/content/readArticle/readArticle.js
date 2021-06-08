@@ -1,7 +1,18 @@
 import styles from './readArticle.module.sass'
 import Author from '../article/author.js'
 
+import ApiCallDel from '../../../apiCallDel.js'
+
 export default function Read(props){
+
+    const deleteFn = async () => {
+        console.log(props.data)
+        try {
+            const res = await ApiCallDel(props.data._id);
+        }catch(err){
+            console.log(err)
+        }
+    };
 
     return <>
         <article className={styles.container_}>
@@ -17,7 +28,7 @@ export default function Read(props){
 
             <section className={styles.buttons_} >
 
-                <button className={styles["button"]+" "+styles["is-outlined"]}>Delete</button>
+                <button onClick={deleteFn} className={styles["button"]+" "+styles["is-outlined"]}>Delete</button>
                 <button style={{background: props.color}} className={styles["button"]}>Modify</button>
 
             </section>
