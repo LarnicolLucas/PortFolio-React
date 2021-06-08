@@ -24,8 +24,8 @@ export default function SideBar(props){
     }
 
     const tags = [
-        {id: 0, name: "LifeStyle", tag: "lifeStyle"},
-        {id: 1, name: "CodeDiary", tag: "codeDiary"}
+        {id: 0, tag: "lifeStyle"},
+        {id: 1, tag: "codeDiary"}
     ].map(el=> <option style={customSize} key={el.id} value={el.tag}> {el.name} </option>);
 
     const Create = async () => {
@@ -61,6 +61,7 @@ export default function SideBar(props){
                         onChange={handleInputs} 
                         name="tag" 
                     >
+                        <option style={customSize} value="" selected> Pick a Tag </option>
                         {tags}
                     </select>
                     </div>
