@@ -61,7 +61,7 @@ export default function SideBar(props){
                         onChange={handleInputs} 
                         name="tag" 
                     >
-                        <option style={customSize} value="" selected> Pick a Tag </option>
+                        <option style={customSize} defaultValue=""> Pick a Tag </option>
                         {tags}
                     </select>
                     </div>
