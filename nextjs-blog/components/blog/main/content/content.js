@@ -12,6 +12,7 @@ import Loader from '../../../utils/loader/loader.js'
 export default function Content(props){
 
     const [readPage, setReadPage] = useState(0);
+    const [updateArticle, setUpdateArticle] = useState({active: false, id: null});
 
     const readArticle = (id) => {
         setReadPage(id)
@@ -22,6 +23,11 @@ export default function Content(props){
 
         props.changeFilter(true, "");
         props.askNewArticle(false);
+    };
+
+    const askUpdateArticle = (id) => {
+        setUpdateArticle({active: true, id: id})
+        props.askUpdateArticle(true);
     };
 
     const [articleDatas, setArticleDatas] = useState([]);
@@ -36,12 +42,15 @@ export default function Content(props){
         color={props.color} 
         data={articleDatas.filter(el => el._id === readPage)[0]} 
         changeFilter={redirectionAfterAction}
+        askUpdateArticle={askUpdateArticle}
     />
 
     const [loader, setLoader] = useState(<Loader />);
 
-    const test = props.newArticle ? 
-    <NewArticle changeFilter={redirectionAfterAction}/> :
+    const test = props.newArticle.active ? 
+        props.newArticle.new_ ?
+        <NewArticle changeFilter={redirectionAfterAction} updateArticle={{active: false, id: null}}/> :
+        <NewArticle changeFilter={redirectionAfterAction} updateArticle={updateArticle}/> :
     props.tagFilter.active ?
         articles :
         readArticles
@@ -58,7 +67,7 @@ export default function Content(props){
         }catch(err){
             console.log(err)
         }
-    }, [props.newArticle, props.tagFilter.active]);
+    }, [props.tagFilter.active]);
 
     return <>
         <section className={styles.container_}>

@@ -29,7 +29,7 @@ export default function Read(props){
             <section className={styles.buttons_} >
 
                 <button onClick={deleteFn} className={styles["button"]+" "+styles["is-outlined"]}>Delete</button>
-                <button style={{background: props.color}} className={styles["button"]}>Modify</button>
+                <button onClick={()=> props.askUpdateArticle(props.data._id)} style={{background: props.color}} className={styles["button"]}>Modify</button>
 
             </section>
             

@@ -6,10 +6,11 @@ import Content from './content/content.js'
 
 export default function SideBar(props){
 
-    const [newArticle, setNewArticle] = useState(false);
+    const [newArticle, setNewArticle] = useState({active: false, new_: false});
     const [tagFilter, setTagFilter] = useState({active: true, tag: ""});
 
-    const askNewArticle = (bol) => setNewArticle(bol);
+    const askNewArticle = (bol) => setNewArticle({active: bol, new_: true});
+    const askUpdateArticle = (bol) => setNewArticle({active: bol, new_: false});
     const changeFilter = (bol, tag) => setTagFilter({active: bol, tag: tag});
 
     return <>
@@ -18,7 +19,7 @@ export default function SideBar(props){
             <SideNav color={props.color} askNewArticle={askNewArticle} changeFilter={changeFilter}/>
             <Content 
                 color={props.color} 
-                askNewArticle={askNewArticle}
+                askUpdateArticle={askUpdateArticle}
                 newArticle={newArticle} 
                 changeFilter={changeFilter} 
                 tagFilter={tagFilter}

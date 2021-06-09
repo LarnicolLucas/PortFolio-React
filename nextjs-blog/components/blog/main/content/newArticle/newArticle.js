@@ -1,6 +1,7 @@
 import ApiCall from '../../../apiCallPost';
+import ApiCallGet from '../../../apiCallGet';
 import styles from './newArticle.module.sass';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 export default function SideBar(props){
 
@@ -14,7 +15,7 @@ export default function SideBar(props){
         src: ""
     };
 
-    const [dataToSend, setDataToSend] = useState(datas);
+    const [dataToSend, setDataToSend] = useState(datas)
 
     const handleInputs = (e) => setDataToSend(Object.assign({}, dataToSend, {[e.target.name] : e.target.value}))
 
@@ -29,14 +30,28 @@ export default function SideBar(props){
     ].map(el=> <option style={customSize} key={el.id} value={el.tag}> {el.name} </option>);
 
     const Create = async () => {
-        try {
-            
+        try {  
             const res = await ApiCall(dataToSend);
             props.changeFilter()
         }catch(err){
             console.log(err)
         }
     };
+
+    useEffect(async ()=> {
+        if(props.updateArticle.active){
+            try {  
+                const res = await ApiCallGet(props.updateArticle.id);
+                console.log(res)
+                setDataToSend(res[0])
+
+            }catch(err){
+                console.log(err)
+            }
+        } else {
+            setDataToSend(datas)
+        }
+    }, [props.updateArticle])
 
     return <>
         <section className={styles.container_}>
@@ -47,6 +62,7 @@ export default function SideBar(props){
                 <div className={styles["control"]}>
                     <input
                         onChange={handleInputs}
+                        value={dataToSend.name}
                         name="name" 
                         style={customSize} 
                         className={styles["input"]+" "+styles["is-rounded"]} 
@@ -59,6 +75,7 @@ export default function SideBar(props){
                     <div style={customSize} className={styles["select"]+" "+styles["is-rounded"]} type="text" placeholder="Tag">
                     <select 
                         onChange={handleInputs} 
+                        value={dataToSend.tag}
                         name="tag" 
                     >
                         <option style={customSize} defaultValue=""> Pick a Tag </option>
@@ -70,6 +87,7 @@ export default function SideBar(props){
                 <div className={styles["control"]}>
                     <input
                     onChange={handleInputs}
+                    value={dataToSend.title}
                     name="title"
                     style={customSize} 
                     className={styles["input"]+" "+styles["is-rounded"]} 
@@ -81,6 +99,7 @@ export default function SideBar(props){
                 <div className={styles["control"]}>
                     <input
                         onChange={handleInputs}
+                        value={dataToSend.src}
                         name="src" 
                         style={customSize} 
                         className={styles["input"]+" "+styles["is-rounded"]} 
@@ -92,6 +111,7 @@ export default function SideBar(props){
                 <div className={styles["control"]}>
                     <input
                         onChange={handleInputs}
+                        value={dataToSend.img}
                         name="img" 
                         style={customSize} 
                         className={styles["input"]+" "+styles["is-rounded"]} 
@@ -103,6 +123,7 @@ export default function SideBar(props){
                 <div className={styles["control"]}>
                     <textarea
                         onChange={handleInputs}
+                        value={dataToSend.content}
                         name="content" 
                         style={customSize} 
                         className={styles["textarea"]} 
