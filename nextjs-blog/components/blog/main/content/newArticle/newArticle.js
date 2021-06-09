@@ -1,5 +1,6 @@
 import ApiCall from '../../../apiCallPost';
 import ApiCallGet from '../../../apiCallGet';
+import ApiCallUp from '../../../apiCallUp';
 import styles from './newArticle.module.sass';
 import {useState, useEffect} from 'react'
 
@@ -37,12 +38,24 @@ export default function SideBar(props){
             console.log(err)
         }
     };
+    const Update = async () => {
+        try {  
+            const res = await ApiCallUp(Object.assign({}, dataToSend, {_id: props.updateArticle.id}));
+            props.changeFilter()
+        }catch(err){
+            console.log(err)
+        }
+    };
+
+    const createUpload = () => props.updateArticle.active ? 
+        Update() :
+        Create()
+    ;
 
     useEffect(async ()=> {
         if(props.updateArticle.active){
             try {  
                 const res = await ApiCallGet(props.updateArticle.id);
-                console.log(res)
                 setDataToSend(res[0])
 
             }catch(err){
@@ -130,7 +143,7 @@ export default function SideBar(props){
                         placeholder="Content"
                     ></textarea>
                 </div>
-                <a className={styles["button"]+" "+styles["is-rounded"]+" "+styles.button_} onClick={Create}>Send</a>
+                <a className={styles["button"]+" "+styles["is-rounded"]+" "+styles.button_} onClick={createUpload}>Send</a>
             </div>
 
         </section>
