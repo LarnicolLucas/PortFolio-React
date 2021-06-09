@@ -12,7 +12,7 @@ export default function Article(props){
     return <>
         <article className={styles.container_} onClick={()=> props.readArticle(props.data._id)}>
             
-            <h5 style={styleTag} className={styles.title_}>
+            <h5 className={styles.title_}>
 
                 {props.data.title}
 

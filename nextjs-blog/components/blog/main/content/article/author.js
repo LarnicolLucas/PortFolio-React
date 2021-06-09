@@ -17,9 +17,9 @@ export default function author(props){
             <img className={styles.img_} src={props.img} />
 
             <figcaption className={styles.figcaption_}>
-                <h5 className={styles.title}> {props.name} </h5>
+                <p className={styles.title}> {props.name} </p>
+                <p className={styles.date}>{dateFormat(props.date)}</p>
             </figcaption>
         </article>
-        <p className={styles.date}>{dateFormat(props.date)}</p>
     </>
 }

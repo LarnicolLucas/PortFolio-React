@@ -126,7 +126,7 @@ export default function SideBar(props){
                         value={dataToSend.content}
                         name="content" 
                         style={customSize} 
-                        className={styles["textarea"]} 
+                        className={styles["textarea"]+" "+styles.textAera_} 
                         placeholder="Content"
                     ></textarea>
                 </div>

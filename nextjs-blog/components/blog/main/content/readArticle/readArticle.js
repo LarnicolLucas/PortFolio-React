@@ -16,6 +16,13 @@ export default function Read(props){
 
     return <>
         <article className={styles.container_}>
+
+            <section className={styles.buttons_} >
+
+                <button onClick={deleteFn} className={styles["button"]+" "+styles["is-outlined"]}>Delete</button>
+                <button onClick={()=> props.askUpdateArticle(props.data._id)} style={{background: props.color}} className={styles["button"]}>Modify</button>
+
+            </section>
         
             <h1 className={styles.title_}> {props.data.title} </h1>
 
@@ -25,14 +32,6 @@ export default function Read(props){
             <Author style={{justifyContent: "right", paddingRight: "3%"}} name={props.data.name} img={props.data.img} date={props.data.date}/>
             
             <p className={styles.para_}>{props.data.content}</p>
-
-            <section className={styles.buttons_} >
-
-                <button onClick={deleteFn} className={styles["button"]+" "+styles["is-outlined"]}>Delete</button>
-                <button onClick={()=> props.askUpdateArticle(props.data._id)} style={{background: props.color}} className={styles["button"]}>Modify</button>
-
-            </section>
-            
 
         </article>
     </>
