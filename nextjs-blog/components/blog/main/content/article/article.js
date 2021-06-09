@@ -11,27 +11,30 @@ export default function Article(props){
 
     return <>
         <article className={styles.container_} onClick={()=> props.readArticle(props.data._id)}>
+            
+            <h5 style={styleTag} className={styles.title_}>
 
-            <figure className={styles.figure_}>
+                {props.data.title}
 
-                <img className={styles.img_} src={props.data.src} />
+            </h5>
 
-            </figure>
+            <section className={styles.container_2} >
 
-            <figcaption className={styles.figcaption_}>
+                <figure className={styles.figure_}>
 
-                <p style={styleTag} className={styles.tag_}>
-                    {toUpperFirst(props.data.tag)}
-                </p>
+                    <img className={styles.img_} src={props.data.src} />
 
-                <h5>
+                </figure>
 
-                    {props.data.title}
+                <figcaption className={styles.figcaption_}>
 
-                </h5>
+                    <p style={styleTag} className={styles.tag_}>
+                        {toUpperFirst(props.data.tag)}
+                    </p>
 
-                <Author date={props.data.date} name={props.data.name} img={props.data.img}/>
-            </figcaption>
+                    <Author date={props.data.date} name={props.data.name} img={props.data.img}/>
+                </figcaption>
+            </section>
 
 
         </article>
