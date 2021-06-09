@@ -67,7 +67,7 @@ export default function Content(props){
         }catch(err){
             console.log(err)
         }
-    }, [props.tagFilter.active]);
+    }, [props.newArticle, props.tagFilter.active]);
 
     return <>
         <section className={styles.container_}>
