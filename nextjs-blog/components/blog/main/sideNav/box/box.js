@@ -20,7 +20,7 @@ export default function Box(props){
 
             </section>
 
-            <figure className={styles.figure_}>
+            <figure className={styles.figure_} onClick={() => props.askNewArticle(true)}>
                 <img className={styles.img_} src="/images/blog/illustration.svg" />
             </figure>
 
