@@ -14,7 +14,7 @@ const Get = async (req, res)=> {
             const col = db.collection("article");
     
             const result = _id === "allArticles" ? 
-                await col.find({}).project({content: 0}).toArray() :
+                await col.find({}).toArray() :
                 await col.find({_id: _id}).toArray()
             ;
     
