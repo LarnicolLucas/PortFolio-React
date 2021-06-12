@@ -13,6 +13,8 @@ export default function SideBar(props){
     const askUpdateArticle = (bol) => setNewArticle({active: bol, new_: false});
     const changeFilter = (bol, tag) => setTagFilter({active: bol, tag: tag});
 
+    const upStateDatas = (datas) => props.upStateDatas(datas)
+
     return <>
         <section className={styles.container_}>
 
@@ -23,6 +25,7 @@ export default function SideBar(props){
                 newArticle={newArticle} 
                 changeFilter={changeFilter} 
                 tagFilter={tagFilter}
+                upStateDatas={upStateDatas}
             />
 
         </section>

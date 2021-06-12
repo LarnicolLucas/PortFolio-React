@@ -63,11 +63,12 @@ export default function Content(props){
             const res = await ApiCallGet("allArticles");
             setLoader("");
             setArticleDatas(res);
+            props.upStateDatas(res)
 
         }catch(err){
             console.log(err)
         }
-    }, [props.newArticle, props.tagFilter.active]);
+    }, [props.newArticle, props.tagFilter]);
 
     return <>
         <section className={styles.container_}>

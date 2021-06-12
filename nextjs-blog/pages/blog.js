@@ -1,3 +1,5 @@
+import {useState} from 'react'
+
 import styles from './blog.module.sass'
 import Layout from '../components/layout'
 import Head from 'next/head'
@@ -8,6 +10,9 @@ import Main from '../components/blog/main/main.js'
 export default function index(props){
 
     const color= "#4A9FCD";
+
+    const [datas, setDatas] = useState([]);
+    const upStateDatas = (datas) => setDatas(datas)
     
 
   return <>
@@ -19,8 +24,8 @@ export default function index(props){
 
                 <section className={styles.container_}>
 
-                    <Nav color={color}/>
-                    <Main color={color}/>
+                    <Nav color={color} datas={datas} />
+                    <Main upStateDatas={upStateDatas} color={color}/>
 
                 </section>
 
