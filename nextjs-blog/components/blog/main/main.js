@@ -6,26 +6,24 @@ import Content from './content/content.js'
 
 export default function SideBar(props){
 
-    const [newArticle, setNewArticle] = useState({active: false, new_: false});
-    const [tagFilter, setTagFilter] = useState({active: true, tag: ""});
+    const upStateDatas = (datas) => props.upStateDatas(datas);
 
-    const askNewArticle = (bol) => setNewArticle({active: bol, new_: true});
-    const askUpdateArticle = (bol) => setNewArticle({active: bol, new_: false});
-    const changeFilter = (bol, tag) => setTagFilter({active: bol, tag: tag});
-
-    const upStateDatas = (datas) => props.upStateDatas(datas)
+    const handleChangeContent = (selector) => props.handleChangeContent(selector);
 
     return <>
         <section className={styles.container_}>
 
-            <SideNav color={props.color} askNewArticle={askNewArticle} changeFilter={changeFilter}/>
-            <Content 
+            <SideNav 
                 color={props.color} 
-                askUpdateArticle={askUpdateArticle}
-                newArticle={newArticle} 
-                changeFilter={changeFilter} 
-                tagFilter={tagFilter}
+                handleChangeContent={handleChangeContent}
+            />
+            <Content 
                 upStateDatas={upStateDatas}
+
+                color={props.color}
+                handleChangeContent={handleChangeContent}
+                contentElements={props.contentElements}
+
             />
 
         </section>

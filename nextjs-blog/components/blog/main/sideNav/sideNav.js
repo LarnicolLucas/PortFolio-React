@@ -6,8 +6,7 @@ import Box from './box/box.js'
 
 export default function SideBar(props){
 
-    const askNewArticle = (bol) => props.askNewArticle(bol);
-    const changeFilter = (bol, tag) => props.changeFilter(bol, tag);
+    const handleChangeContent = (selector) => props.handleChangeContent(selector);
 
     const items = [
         {id: 0, name: 'Home', tag: '', clicked: true},
@@ -32,8 +31,7 @@ export default function SideBar(props){
         color={props.color} 
         clicked={el.clicked}
         fnClicked={handleClickedItem}
-        askNewArticle={askNewArticle}
-        changeFilter={changeFilter}
+        handleChangeContent={handleChangeContent}
     />)
 
     const [list, setList] = useState(createJSXList(items));
@@ -48,7 +46,7 @@ export default function SideBar(props){
 
             </section>
 
-            <Box color={props.color} askNewArticle={askNewArticle}/>
+            <Box color={props.color} handleChangeContent={handleChangeContent}/>
 
         </aside>
     </>

@@ -6,6 +6,27 @@ import {useState, useEffect} from 'react'
 
 export default function SideBar(props){
 
+    const articlePosted = () => {
+        const selector = {
+            home: {
+                active: true,
+                filter: ""
+            },
+            read: {
+                active: false,
+                id: props.data._id
+            },
+            write: {
+                active: false
+            },
+            update: {
+                active: false,
+                id: null
+            }
+        };
+        props.handleChangeContent(selector);
+    }
+
     const datas = {
         tag: "",
         title: "",
@@ -33,7 +54,7 @@ export default function SideBar(props){
     const Create = async () => {
         try {  
             const res = await ApiCall(dataToSend);
-            props.changeFilter()
+            articlePosted();
         }catch(err){
             console.log(err)
         }
@@ -41,7 +62,7 @@ export default function SideBar(props){
     const Update = async () => {
         try {  
             const res = await ApiCallUp(Object.assign({}, dataToSend, {_id: props.updateArticle.id}));
-            props.changeFilter()
+            articlePosted();
         }catch(err){
             console.log(err)
         }

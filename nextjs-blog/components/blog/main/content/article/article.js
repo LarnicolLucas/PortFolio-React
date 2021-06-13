@@ -9,8 +9,29 @@ export default function Article(props){
 
     const toUpperFirst = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
+    const articleClicked = () => {
+        const selector = {
+            home: {
+                active: false,
+                filter: ""
+            },
+            read: {
+                active: true,
+                id: props.data._id
+            },
+            write: {
+                active: false
+            },
+            update: {
+                active: false,
+                id: null
+            }
+        };
+        props.handleChangeContent(selector);
+    }
+
     return <>
-        <article className={styles.container_} onClick={()=> props.readArticle(props.data._id)}>
+        <article className={styles.container_} onClick={articleClicked}>
             
             <h5 className={styles.title_}>
 

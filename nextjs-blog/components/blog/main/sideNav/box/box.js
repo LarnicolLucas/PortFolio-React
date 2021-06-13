@@ -6,6 +6,27 @@ export default function Box(props){
         background: props.color
     };
 
+    const newArticleClicked = () => {
+        const selector = {
+            home: {
+                active: false,
+                filter: ""
+            },
+            read: {
+                active: false,
+                id: null
+            },
+            write: {
+                active: true
+            },
+            update: {
+                active: false,
+                id: null
+            }
+        };
+        props.handleChangeContent(selector);
+    }
+
     return <>
         <article className={styles.container_} style={color}>
 
@@ -15,12 +36,12 @@ export default function Box(props){
 
                 <button 
                     className={styles.button+" "+styles["is-rounded"]+" "+styles.button_}
-                    onClick={() => props.askNewArticle(true)}
+                    onClick={newArticleClicked}
                 >Write Article</button>
 
             </section>
 
-            <figure className={styles.figure_} onClick={() => props.askNewArticle(true)}>
+            <figure className={styles.figure_} onClick={newArticleClicked}>
                 <img className={styles.img_+" "+styles.img1} src="/images/blog/illustration1.svg" />
                 <img className={styles.img_+" "+styles.img0} src="/images/blog/illustration0.svg" />
             </figure>

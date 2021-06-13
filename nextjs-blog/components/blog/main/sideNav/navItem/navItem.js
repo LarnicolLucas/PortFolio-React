@@ -15,9 +15,25 @@ export default function NavItem(props){
     const svg = props.clicked ? "/images/blog/icons/"+props.data.id+"W.svg" : "/images/blog/icons/"+props.data.id+".svg";
 
     const buttonClicked= ()=> {
-        props.changeFilter(true, props.data.tag);
         props.fnClicked(props.id);
-        props.askNewArticle(false)
+        const selector = {
+            home: {
+                active: true,
+                filter: props.data.tag
+            },
+            read: {
+                active: false,
+                id: null
+            },
+            write: {
+                active: false
+            },
+            update: {
+                active: false,
+                id: null
+            }
+        };
+        props.handleChangeContent(selector);
     }
 
     return <>
