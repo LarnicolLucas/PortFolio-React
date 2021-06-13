@@ -3,5 +3,8 @@ export default function findInText(text, word){
 
     //return console.log(text.search(regex1), regex1.test(text), text.match(regex1));
 
-    return regex1.test(text)
+    return {
+        bol: regex1.test(text),
+        index: text.search(regex1)
+    }
 }
