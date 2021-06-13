@@ -6,6 +6,7 @@ import Head from 'next/head'
 
 import Nav from '../components/blog/nav/nav.js'
 import Main from '../components/blog/main/main.js'
+import Box from '../components/blog/main/sideNav/box/box.js'
 
 export default function index(props){
 
@@ -26,6 +27,9 @@ export default function index(props){
 
                     <Nav color={color} datas={datas} />
                     <Main upStateDatas={upStateDatas} color={color}/>
+                    <aside className={styles.box_container}>
+                        <Box color={color}/>
+                    </aside>
 
                 </section>
 

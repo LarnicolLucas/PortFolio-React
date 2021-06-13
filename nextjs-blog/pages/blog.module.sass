@@ -7,13 +7,23 @@
     flex-direction: column
     align-content: stretch
     position: relative
+.box_container
+    display: none
+    position: fixed
+    right: 0
+    top: 11%
+    width: 33%
 
 @media only screen and (max-width: 700px )
     .container_
         border-radius: 0
         padding: 0
+    .box_container
+        display: flex
 
 @media only screen and (min-width: 1200px )
     .container_
         border-radius: 20px
         padding: 3vw 0 0 3vw
+    .box_container
+        display: none
