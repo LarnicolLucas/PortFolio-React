@@ -1,12 +1,9 @@
-import {useState} from 'react'
 import styles from './main.module.sass'
 
 import SideNav from './sideNav/sideNav.js'
 import Content from './content/content.js'
 
 export default function SideBar(props){
-
-    const upStateDatas = (datas) => props.upStateDatas(datas);
 
     const handleChangeContent = (selector) => props.handleChangeContent(selector);
 
@@ -18,7 +15,7 @@ export default function SideBar(props){
                 handleChangeContent={handleChangeContent}
             />
             <Content 
-                upStateDatas={upStateDatas}
+                datas={props.datas}
 
                 color={props.color}
                 handleChangeContent={handleChangeContent}

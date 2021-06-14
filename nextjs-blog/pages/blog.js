@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 import styles from './blog.module.sass'
 import Layout from '../components/layout'
@@ -8,6 +8,8 @@ import Nav from '../components/blog/nav/nav.js'
 import Main from '../components/blog/main/main.js'
 import Box from '../components/blog/main/sideNav/box/box.js'
 
+import ApiCallGet from '../components/blog/apiCallGet'
+
 export default function index(props){
 
     const color= "#4A9FCD";
@@ -15,7 +17,6 @@ export default function index(props){
     //data flow handle by this page (change to do)
 
     const [datas, setDatas] = useState([]);
-    const upStateDatas = (datas) => setDatas(datas)
 
     //content selector :
 
@@ -34,11 +35,21 @@ export default function index(props){
         update: {
             active: false,
             id: null
-        }
+        },
+        refresh: false
     }
 
     const [contentElements, setContentElements] = useState(selector);
     const handleChangeContent = (selector) => setContentElements(selector);
+
+    useEffect(async ()=> {
+        try{
+            const res = await ApiCallGet("allArticles");
+            setDatas(res);
+        }catch(err){
+            console.log(err)
+        }
+    }, [contentElements.refresh])
     
 
   return <>
@@ -57,9 +68,9 @@ export default function index(props){
                     />
                     <Main 
                         color={color}
-                        upStateDatas={upStateDatas} 
                         handleChangeContent={handleChangeContent}
                         contentElements={contentElements}
+                        datas={datas}
                     />
                     <aside className={styles.box_container}>
                         <Box 
