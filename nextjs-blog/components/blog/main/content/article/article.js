@@ -25,7 +25,8 @@ export default function Article(props){
             update: {
                 active: false,
                 id: null
-            }
+            },
+            refresh: false
         };
         props.handleChangeContent(selector);
     }

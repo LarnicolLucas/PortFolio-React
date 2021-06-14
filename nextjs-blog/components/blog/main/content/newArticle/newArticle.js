@@ -14,7 +14,7 @@ export default function SideBar(props){
             },
             read: {
                 active: false,
-                id: props.data._id
+                id: null
             },
             write: {
                 active: false
@@ -22,7 +22,8 @@ export default function SideBar(props){
             update: {
                 active: false,
                 id: null
-            }
+            },
+            refresh: true
         };
         props.handleChangeContent(selector);
     }

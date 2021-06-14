@@ -21,7 +21,8 @@ export default function Read(props){
             update: {
                 active: false,
                 id: null
-            }
+            },
+            refresh: true
         };
         props.handleChangeContent(selector);
     };
@@ -41,7 +42,8 @@ export default function Read(props){
             update: {
                 active: true,
                 id: props.data._id
-            }
+            },
+            refresh: false
         };
         props.handleChangeContent(selector);
     }
