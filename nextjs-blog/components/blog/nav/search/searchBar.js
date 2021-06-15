@@ -6,13 +6,16 @@ import {useState} from 'react'
 import Article from '../articles/articles.js'
 
 export default function SearchBar(props){
+
+    const handleChangeContent = (selector) => props.handleChangeContent(selector);
+
     const styleColor= {
         background: props.color
     };
     
     const [articles, setArticles] = useState([]);
 
-    const mapListArticle = (list) => list.map(el=> <Article key={el._id} data={el} />);
+    const mapListArticle = (list) => list.map(el=> <Article key={el._id} data={el} handleChangeContent={handleChangeContent}/>);
 
     const handleChange = (e) => {
         const list = props.datas.filter(el => search(el.title, e.target.value).bol)
