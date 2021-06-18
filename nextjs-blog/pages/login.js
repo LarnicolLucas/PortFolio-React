@@ -44,7 +44,7 @@ export default function LoginPage(){
 
     const handleCreateNewUser= (bol) => setFirstLog(bol);
 
-    const handleSend= (bol) => console.log(bol)
+    const handleSend= () => firstLog ? console.log("postNew") : console.log("postLog")
 
     const Log = <>
         <Login />
