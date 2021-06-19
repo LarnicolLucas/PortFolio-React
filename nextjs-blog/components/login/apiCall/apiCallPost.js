@@ -14,9 +14,11 @@ export default async function ApiCallPost(login, password, type){
             headers: { 'Content-Type': 'application/json' }
         });
 
-        res = await response.json();
+        const responseData = await response.json();
 
-        return res
+        console.log(responseData)
+
+        return responseData
 
     }catch(err){
         console.log(err)
