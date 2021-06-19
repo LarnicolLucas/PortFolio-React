@@ -7,7 +7,7 @@ export default function LoginInput(props){
                 <img src="/images/login/user.svg" />
             </figure>
             
-            <input className={styles.input} placeholder="Login"/>
+            <input className={styles.input} placeholder="Login" onChange={(e)=> props.handleLogin(e.target.value)}/>
         </section>
     </>
 }
