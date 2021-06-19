@@ -10,6 +10,8 @@ import NewLog from '../components/login/newLog.js'
 import Create from '../components/login/create.js'
 import Help from '../components/login/help.js'
 
+import ApiCallPost from '../components/login/apiCall/apiCallPost'
+
 export default function LoginPage(){
 
     const listHelp = [
@@ -26,7 +28,11 @@ export default function LoginPage(){
     const [help, setHelp] = useState(listHelp);
     const [helpActive, setHelpActive] = useState(false);
 
-    const [firstLog, setFirstLog] = useState(false)
+    const [firstLog, setFirstLog] = useState(false);
+
+    const [error, setError] = useState("");
+
+    const handleLogin = (login) => setLogin(login)
 
     const handlePasswordLog = (password, helpList) => {
         setPassword(password);
@@ -44,17 +50,17 @@ export default function LoginPage(){
 
     const handleCreateNewUser= (bol) => setFirstLog(bol);
 
-    const handleSend= () => firstLog ? console.log("postNew") : console.log("postLog")
+    const handleSend= () => firstLog ? ApiCallPost(login, password, true) : ApiCallPost(login, password, false);
 
     const Log = <>
-        <Login />
+        <Login handleLogin={handleLogin}/>
         <Password placeholder={"Password"} listHelp={listHelp} handlePassword={handlePasswordLog}/>
         <NewLog text={"Login Now"} clicked={handleSend} />
         <Create clicked={handleCreateNewUser}/>
     </>;
 
     const NewUser = <>
-        <Login />
+        <Login handleLogin={handleLogin}/>
         <Password placeholder={"Create Password"} listHelp={listHelp} handlePassword={handlePasswordFirstLog}/>
         <Password placeholder={"Confirm Password"} listHelp={listHelp} handlePassword={handlePasswordFirstLogConfirm}/>
         <NewLog text={"Create User"} clicked={handleSend} />
@@ -83,6 +89,9 @@ export default function LoginPage(){
                     <article className={styles.help}>
                         <Help help={help} active={helpActive} />
                     </article>
+                    <aside>
+                        <p className={styles.error}>{error}</p>
+                    </aside>
                 </section>
 
             </main>
