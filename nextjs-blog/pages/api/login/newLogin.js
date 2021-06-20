@@ -22,7 +22,8 @@ export default async function HandleRequest(req, res){
             password: hashedPassword,
             salt: newSalt,
             ip: ip,
-            attempt: 0
+            attempt: 0,
+            blockTime: 0
         }, params.db);
 
         return res.status(200).json({error: false});
