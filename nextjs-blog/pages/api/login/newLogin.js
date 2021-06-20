@@ -31,7 +31,7 @@ export default async function HandleRequest(req, res){
             ip: ip
         }, params.db);
 
-        console.log(record)
+        return res.status(200).json({error: false});
 
     }catch(err){
         console.log(err)
