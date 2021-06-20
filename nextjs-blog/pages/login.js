@@ -23,7 +23,6 @@ export default function LoginPage(){
 
     const [login, setLogin] = useState("");
     const [password, setPassword] = useState("");
-    const [passwordConfirm, setPasswordConfirm] = useState("");
 
     const [help, setHelp] = useState(listHelp);
     const [helpActive, setHelpActive] = useState(false);
@@ -36,10 +35,7 @@ export default function LoginPage(){
     const [identicalPassword, setIdenticalPassword] = useState(false)
 
     const handleLogin = (login) => setLogin(login);
-
-    const handlePasswordLog= (password, helpList) => {
-        setPasswordConfirm(password);
-    };
+    const handlePassword = (password) => setPassword(password);
 
     const handlePasswordFirstLog = (password, helpList) => {
         setPassword(password);
@@ -78,6 +74,8 @@ export default function LoginPage(){
 
             } else {
                 const response = await ApiCallPost(login, password, false);
+
+                if(response.error) return setError(response.message)
             }
         }catch(err){
             console.log(err)
@@ -89,7 +87,7 @@ export default function LoginPage(){
 
     const Log = <>
         <Login handleLogin={handleLogin}/>
-        <Password placeholder={"Password"} listHelp={listHelp} handlePassword={handlePasswordLog}/>
+        <Password placeholder={"Password"} listHelp={listHelp} handlePassword={handlePassword}/>
         <NewLog text={"Login Now"} clicked={handleSend} active={true} />
         <Create clicked={handleCreateNewUser}/>
     </>;
