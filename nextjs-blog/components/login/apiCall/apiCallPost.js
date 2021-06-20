@@ -16,8 +16,6 @@ export default async function ApiCallPost(login, password, type){
 
         const responseData = await response.json();
 
-        console.log(responseData)
-
         return responseData
 
     }catch(err){
