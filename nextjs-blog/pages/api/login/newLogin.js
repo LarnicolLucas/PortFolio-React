@@ -2,14 +2,7 @@ import createSalt from './components/createSalt'
 import hashSalt from './components/hashSlat';
 import checkNewUser from './components/checkNewUser/checkNewUser';
 import post from './components/post';
-
-const params = {
-    db: {
-        database: "login",
-        collection: "users"
-    },
-    regex: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
-};
+import params from "./params"
 
 export default async function HandleRequest(req, res){
 
@@ -28,7 +21,8 @@ export default async function HandleRequest(req, res){
             login: body.login, 
             password: hashedPassword,
             salt: newSalt,
-            ip: ip
+            ip: ip,
+            attempt: 0
         }, params.db);
 
         return res.status(200).json({error: false});
