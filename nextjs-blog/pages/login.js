@@ -32,38 +32,83 @@ export default function LoginPage(){
 
     const [error, setError] = useState("");
 
-    const handleLogin = (login) => setLogin(login)
+    const [validPassword, setValidPassword] = useState(false);
+    const [identicalPassword, setIdenticalPassword] = useState(false)
 
-    const handlePasswordLog = (password, helpList) => {
-        setPassword(password);
-    };
+    const handleLogin = (login) => setLogin(login);
 
-    const handlePasswordFirstLogConfirm = (password, helpList) => {
+    const handlePasswordLog= (password, helpList) => {
         setPasswordConfirm(password);
     };
 
     const handlePasswordFirstLog = (password, helpList) => {
         setPassword(password);
         setHelp(helpList);
-        setHelpActive(true)
+        setHelpActive(true);
+        setValidPassword(helpList.filter(el => el.valid).length === 4 ? true : false)
     };
+
+    const handlePasswordFirstLogConfirm = (passwordEvent, helpList) => 
+        passwordEvent === password ? 
+        setIdenticalPassword(true) : 
+        setIdenticalPassword(false)
+    ;
 
     const handleCreateNewUser= (bol) => setFirstLog(bol);
 
-    const handleSend= () => firstLog ? ApiCallPost(login, password, true) : ApiCallPost(login, password, false);
+    const handleSend= async () => {
+
+        try {
+            if(firstLog){
+
+                const response = await ApiCallPost(login, password, true);
+
+                console.log(response)
+
+                if(response.error) { 
+                    setError(response.message)
+                }else {
+                    setError("");
+                    setFirstLog(false);
+                    setPassword("");
+                    setIdenticalPassword(false);
+                    setHelpActive(false)
+
+                }       
+
+            } else {
+                const response = await ApiCallPost(login, password, false);
+            }
+        }catch(err){
+            console.log(err)
+        }
+    };
+
+    const imgValid = "/images/login/valid.svg";
+    const imgNotValid = "/images/login/unvalid.svg";
 
     const Log = <>
         <Login handleLogin={handleLogin}/>
         <Password placeholder={"Password"} listHelp={listHelp} handlePassword={handlePasswordLog}/>
-        <NewLog text={"Login Now"} clicked={handleSend} />
+        <NewLog text={"Login Now"} clicked={handleSend} active={true} />
         <Create clicked={handleCreateNewUser}/>
     </>;
 
     const NewUser = <>
         <Login handleLogin={handleLogin}/>
-        <Password placeholder={"Create Password"} listHelp={listHelp} handlePassword={handlePasswordFirstLog}/>
-        <Password placeholder={"Confirm Password"} listHelp={listHelp} handlePassword={handlePasswordFirstLogConfirm}/>
-        <NewLog text={"Create User"} clicked={handleSend} />
+        <section className={styles.containerValidation} >
+            <Password placeholder={"Create Password"} listHelp={listHelp} handlePassword={handlePasswordFirstLog}/>
+            <figure className={styles.figureValidation}>
+                <img src={validPassword && helpActive ? imgValid : imgNotValid} />
+            </figure>
+        </section>
+        <section className={styles.containerValidation} >
+            <Password placeholder={"Confirm Password"} listHelp={listHelp} handlePassword={handlePasswordFirstLogConfirm}/>
+            <figure className={styles.figureValidation}>
+                <img src={validPassword && identicalPassword && helpActive ? imgValid : imgNotValid} />
+            </figure>
+        </section>
+        <NewLog text={"Create User"} clicked={handleSend} active={validPassword && identicalPassword}/>
     </>;
 
 
