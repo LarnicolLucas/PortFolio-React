@@ -17,7 +17,7 @@ export default async function BadAttempt(id, res, dbParams, userAttempt) {
 
         const record = await Update(filter, update, dbParams)
 
-        return wrongAutent(res, "Count has been blocked. Try Later")
+        return wrongAutent(res, "Login or Password is not register")
 
     }catch(err){
         console.log(err)
