@@ -32,7 +32,9 @@ export default function LoginPage(){
     const [error, setError] = useState("");
 
     const [validPassword, setValidPassword] = useState(false);
-    const [identicalPassword, setIdenticalPassword] = useState(false)
+    const [identicalPassword, setIdenticalPassword] = useState(false);
+
+    const [bot, setBot] = useState(false);
 
     const handleLogin = (login) => setLogin(login);
     const handlePassword = (password) => setPassword(password);
@@ -53,6 +55,8 @@ export default function LoginPage(){
     const handleCreateNewUser= (bol) => setFirstLog(bol);
 
     const handleSend= async () => {
+
+        if(bot) return null
 
         try {
             if(firstLog){
@@ -109,7 +113,6 @@ export default function LoginPage(){
         <NewLog text={"Create User"} clicked={handleSend} active={validPassword && identicalPassword}/>
     </>;
 
-
     return (<>
         <Layout>
             <Head>
@@ -138,6 +141,8 @@ export default function LoginPage(){
                 </section>
 
             </main>
+
+            <input style={{display: "none"}} onChange={()=> setBot(true)}/>
             
 
 
