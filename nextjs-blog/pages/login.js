@@ -79,7 +79,9 @@ export default function LoginPage(){
             } else {
                 const response = await ApiCallPost(login, password, false);
 
-                if(response.error) return setError(response.message)
+                if(response.error) return setError(response.message);
+
+                console.log(response)
             }
         }catch(err){
             console.log(err)
