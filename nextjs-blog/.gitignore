@@ -31,3 +31,4 @@ yarn-error.log*
 
 #security
 /pages/api/dbConnect.js
+/pages/api/login/components/privateKey.key
