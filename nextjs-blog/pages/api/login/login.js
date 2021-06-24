@@ -5,6 +5,8 @@ import params from "./params"
 import wrongAutent from "./components/wrongAutent"
 import ResetAttempt from './components/resetAttempt.js';
 
+import jwt from './components/jwt'
+
 
 export default async function HandleRequest(req, res){
 
@@ -28,7 +30,9 @@ export default async function HandleRequest(req, res){
 
         const ClearAttempt = await ResetAttempt(userId, params.db);
 
-        return res.status(200).json({error: false, message: "User autentified"})
+        const token = jwt({user: {name: body.login, id: userId}}, 2);
+
+        return res.status(200).json({error: false, message: "User autentified", token: token})
 
 
     }catch(err){
