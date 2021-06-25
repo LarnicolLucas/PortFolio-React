@@ -81,7 +81,7 @@ export default function LoginPage(){
 
                 if(response.error) return setError(response.message);
 
-                console.log(response)
+                return alert("Cookie is updated with a new token send from server with a 2 days expiration time")
             }
         }catch(err){
             console.log(err)
