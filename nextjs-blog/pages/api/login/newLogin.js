@@ -32,23 +32,4 @@ export default async function HandleRequest(req, res){
         console.log(err)
     }
 
-    /*const query = async (client)=> {
-        try{
-        
-            const db = client.db('blog');
-        
-            const col = db.collection("article");        
-            const result = await col.insertOne(Object.assign({}, body, {date: new Date()}));
-    
-            return res.json({data: result})
-    
-        }catch(err){
-            console.log(err)
-        }
-    }*/
-
-    //return connectMongo(query)
-
-
-
 }
