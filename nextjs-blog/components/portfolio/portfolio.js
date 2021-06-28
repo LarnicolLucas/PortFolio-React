@@ -19,6 +19,20 @@ export default function Portfolio(props){
             description: "Dashboard bind with data from Data Base. Glassmorphism UI",
             link: "/dashboard"
         },
+        {
+            id: 2,
+            title: "Blog",
+            src: "/images/portfolio/blog.png",
+            description: "Home Made Blog with CRUD API",
+            link: "/blog"
+        },
+        {
+            id: 3,
+            title: "Login",
+            src: "/images/portfolio/login.png",
+            description: "Modular Login with BackEnd MongoDB environement.",
+            link: "/login"
+        }
     ].map(el => <Card key={el.id} src={el.src} title={el.title} description={el.description} link={el.link} />);
 
     return <>
