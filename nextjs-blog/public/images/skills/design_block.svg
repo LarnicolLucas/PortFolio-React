@@ -21,15 +21,15 @@
        inkscape:collect="always"
        id="linearGradient2921">
       <stop
-         style="stop-color:#660066;stop-opacity:1"
+         style="stop-color:#0e008d;stop-opacity:1"
          offset="0"
          id="stop2917" />
       <stop
-         style="stop-color:#f700f7;stop-opacity:1"
+         style="stop-color:#351fff;stop-opacity:1"
          offset="0.53333336"
          id="stop2925" />
       <stop
-         style="stop-color:#ff7aff;stop-opacity:1"
+         style="stop-color:#bfb8ff;stop-opacity:1"
          offset="1"
          id="stop2919" />
     </linearGradient>
@@ -100,7 +100,7 @@
      style="display:inline"
      transform="translate(-47.631201,-85.625077)">
     <path
-       style="display:inline;fill:#ff7aff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:#bfb8ff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 51.961524,125 43.301268,25 c 4.33013,2.5 4.33013,2.5 8.660278,0 l 56.29165,-32.5 c 4.33012,-2.5 4.33012,-2.5 0,-5 -20.70754,-11.95551 -29.68125,-17.136459 -43.30127,-24.999934 -4.33013,-2.499985 -4.33013,-2.499985 -8.66026,0 L 51.961524,120 c -4.330127,2.5 -4.330127,2.5 0,5 z"
        id="path12"
        sodipodi:nodetypes="ccccccccc" />

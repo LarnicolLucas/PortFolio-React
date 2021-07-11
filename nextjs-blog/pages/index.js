@@ -7,6 +7,7 @@ import Pres from '../components/pres/pres.js'
 import styles from './index.module.sass'
 import Skills from '../components/skills/skills.js'
 import Portfolio from '../components/portfolio/portfolio.js'
+import About from '../components/about/about'
 
 export default function index(props){
 
@@ -26,6 +27,7 @@ export default function index(props){
           <Pres/>
           <Skills />
           <Portfolio />
+          <About />
       </Layout>
     </>
 }

@@ -180,7 +180,7 @@
        transform="matrix(0.32732684,-0.94491118,0.98198051,0.18898223,0,0)"
        r="0" />
     <ellipse
-       style="fill:#c87aff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.07456993;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#b8f5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.07456993;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        id="path899"
        cx="0.62515461"
        cy="66.875076"
@@ -188,7 +188,7 @@
        ry="22.286415"
        transform="matrix(0.8660254,-0.5,0.8660254,0.5,0,0)" />
     <ellipse
-       style="display:inline;fill:#c87aff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.07456993;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="display:inline;fill:#b8f5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.07456993;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        id="path899-5"
        cx="0.62515634"
        cy="66.875076"
@@ -196,7 +196,7 @@
        ry="19.227043"
        transform="matrix(0.8660254,-0.5,0.8660254,0.5,0,0)" />
     <ellipse
-       style="fill:#c87aff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.529167;stroke-opacity:1"
+       style="fill:#b8f5ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.529167;stroke-opacity:1"
        id="path970"
        cx="80.925964"
        cy="45.244102"
