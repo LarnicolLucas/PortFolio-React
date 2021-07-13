@@ -14,8 +14,8 @@ export default function Info(props){
 
             <figcaption>
                 <p className={styles.description}>
-                    I am 33, i living in Paris and i love the digital world.<br> 
-                    I make music since i'am a child, Bass guitar, Piano and MAO. <br>
+                    I am 33, i living in Paris and i love the digital world.<br /> 
+                    I make music since i'am a child, Bass guitar, Piano and MAO. <br />
                     I practice sport regularly and whenever I get the chance, I travel with my family.
                 </p>
             </figcaption>
