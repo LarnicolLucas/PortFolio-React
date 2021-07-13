@@ -35,7 +35,8 @@ export default function SideBar(props){
         content: "",
         name: "",
         img: "",
-        src: ""
+        src: "",
+        link: ""
     };
 
     const [dataToSend, setDataToSend] = useState(datas)
@@ -136,6 +137,18 @@ export default function SideBar(props){
                         onChange={handleInputs}
                         value={dataToSend.src}
                         name="src" 
+                        style={customSize} 
+                        className={styles["input"]+" "+styles["is-rounded"]} 
+                        type="text" 
+                        placeholder="Html Link" 
+                    />
+                </div>
+                <label style={customSize} className={styles["label"]}>Web Site Link</label>
+                <div className={styles["control"]}>
+                    <input
+                        onChange={handleInputs}
+                        value={dataToSend.link}
+                        name="link" 
                         style={customSize} 
                         className={styles["input"]+" "+styles["is-rounded"]} 
                         type="text" 

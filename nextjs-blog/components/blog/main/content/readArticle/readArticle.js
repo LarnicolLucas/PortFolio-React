@@ -1,5 +1,6 @@
 import styles from './readArticle.module.sass'
 import Author from '../article/author.js'
+import Link from 'next/link'
 
 import ApiCallDel from '../../../apiCallDel.js'
 
@@ -73,7 +74,9 @@ export default function Read(props){
             <h1 className={styles.title_}> {props.data.title} </h1>
 
             <figure className={styles.figure_}>
-                <img className={styles.img_} src={props.data.src} />
+                <Link href={props.data.link} passHref>
+                    <img className={styles.img_} src={props.data.src} />
+                </Link>
             </figure>            
             {splitContent}
 
