@@ -43,10 +43,19 @@ export default function Portfolio(props){
     ].map(el => <Card key={el.id} src={el.src} title={el.title} description={el.description} link={el.link} />);
 
     return <>
-        <Grid addClass={styles.container} nb={2} nb_responsive={1} responsive_size={700} >
+        <section className={styles.container_}>
 
-            {list}
+            <header>
+                <h1 className={styles.title}>
+                    Portfolio
+                </h1>
+            </header>
+            <Grid nb={2} nb_responsive={1} responsive_size={700} >
 
-        </Grid>
+                {list}
+
+            </Grid>
+
+        </section>
     </>
 }
