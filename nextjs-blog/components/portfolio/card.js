@@ -8,12 +8,12 @@ export default function Card(props){
             <Link href={props.link}>
 
                 <article className={styles.card}>
-                    <figure className={`${styles.face} ${styles.front}`}>
+                    <figure className={styles.figure}>
                             <img className={styles.img} src={props.src}/>
                         
                     </figure>
-                    <figcaption className={`${styles.face} ${styles.back}`}>
-                        <p className={styles.text}>{props.description}</p>
+                    <figcaption className={styles.figcaption}>
+                        <p>{props.description}</p>
                     </figcaption>
                 </article>
 
