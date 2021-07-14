@@ -4,21 +4,35 @@
 .title
     text-align: center
     margin: 0 0 5rem 0
-
-.card_container
-    display: flex
-    position: relative
-    justify-content: center
-    align-items: center
-
 .card
-    height: 13vw
-    width: 27vw
-    position: relative
     cursor: pointer
+    position: relative
+    padding: 4rem
+    margin: 0
+.figure
+    margin: 0
+    padding: 0 2rem 0 2rem
+    position: absolute
+    width: 60%
+    transition: 0.2s ease-out
+    transform: translate(50%, -50%)
+    top: 50%
+    right: 50%
 .img
     border-radius: 10px
-
 .figcaption
+    position: absolute
     font-size: 0.8rem
     text-align: center
+    opacity: 0
+    transition: 0.2s ease-out
+    transform: translate(50%, -50%)
+    top: 50%
+    right: 50%
+.card:hover .figcaption
+    opacity: 1
+.card:hover .figure
+    width: 33%
+    transform: translate(0, 0)
+    top: 0
+    left: 0
