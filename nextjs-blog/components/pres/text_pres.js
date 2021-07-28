@@ -13,10 +13,10 @@ const text_pres = (props) => {
     return <>
         <article ref={container}>
             <h3>Hello</h3>
-            <p>I am Lucas. I have been programming since 2017. 
-                I started by doing home automation with a Raspberry Pi. 
-                I like to carry out projects with beautiful graphical interfaces and well-made software architecture.
-                I am currently working in the electrical field and I want to change profession to do what I like: CODE.</p>
+            <p>Hi, my name is <strong>Lucas</strong>.<br/> I love made <strong>WEB</strong> app.<br/>
+                I am always looking for new WEB <strong>techs</strong> and I am convinced to be an <strong>efficient</strong> DEV, testing, versioning and teamworking is necessary.<br/>
+                I like build things from scratch, <strong>custom</strong> CSS rather frameworks CSS for a more <strong>personal</strong> project.<br/>
+                My priority delivers something enjoyable, fast and <strong>reliable</strong> to my client.</p>
         </article>
     </>
 }
