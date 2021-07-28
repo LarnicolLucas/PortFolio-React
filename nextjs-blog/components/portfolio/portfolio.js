@@ -5,11 +5,11 @@ export default function Portfolio(props){
 
     const list = [
         {
-            id: 0,
-            title: "SPA",
-            src: "/images/portfolio/institut.png",
-            description: "Single Page Application for showcase site - French Beauty Institut",
-            link: "/institut"
+            id: 4,
+            title: "OpenData",
+            src: "/images/portfolio/producteur.png",
+            description: "Data analyse from OpenData website.",
+            link: "https://main.dv3k8sumz2a23.amplifyapp.com/"
         },
         {
             id: 1,
@@ -33,12 +33,14 @@ export default function Portfolio(props){
             link: "/login"
         },
         {
-            id: 4,
-            title: "OpenData",
-            src: "/images/portfolio/producteur.png",
-            description: "Data analyse from OpenData website.",
-            link: "https://main.dv3k8sumz2a23.amplifyapp.com/"
-        }
+            id: 0,
+            title: "SPA",
+            src: "/images/portfolio/institut.png",
+            description: "Single Page Application for showcase site - French Beauty Institut",
+            link: "/institut"
+        },
+    
+        
     ].map(el => <Card key={el.id} src={el.src} title={el.title} description={el.description} link={el.link} />);
 
     return <>
