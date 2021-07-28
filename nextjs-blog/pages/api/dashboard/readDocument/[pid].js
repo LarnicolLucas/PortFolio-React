@@ -1,10 +1,10 @@
+import connectMongo from '../../dbConnect.js'
+
 export default function handler(req, res){
 
     const {ObjectID} = require("mongodb");
 
     const { pid } = req.query
-
-    const connectMongo = require("dbConnect");
 
     const db_name= "dashboard"
 
@@ -19,7 +19,7 @@ export default function handler(req, res){
                 await col.find({}).project({name: 1}).toArray() :
                 await col.find({_id: new ObjectID(pid)}).toArray();
 
-            res.json({data: result})
+        return res.json({data: result})
 
         }catch(err){
             console.log(err)
