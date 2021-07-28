@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="378.33112mm"
+   height="284.55566mm"
+   viewBox="0 0 378.33112 284.55566"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
+   sodipodi:docname="schema.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="-37.041668"
+       y="195.79167"
+       width="18.520832"
+       height="13.229167"
+       id="rect1447" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="673.33858"
+     inkscape:cy="558.18577"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer6"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid833"
+       originx="102.10114"
+       originy="-28.916662" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="bad Attempt"
+     transform="translate(102.10115,-28.916663)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9-2-5-4"
+       width="23.8125"
+       height="23.8125"
+       x="-23.8125"
+       y="185.20833"
+       ry="2.6458385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:19.4364;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="105.2044"
+       y="68.996689"
+       id="text839-9-0-7-6"
+       transform="translate(-116.30949,126.66094)"><tspan
+         x="105.2044"
+         y="68.996689"><tspan
+           style="text-align:center;text-anchor:middle">Check </tspan></tspan><tspan
+         x="105.2044"
+         y="74.264738"><tspan
+           style="text-align:center;text-anchor:middle">attempt</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -23.8125,198.4375 h -31.75"
+       id="path1070-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -11.90625,209.02083 v 15.875"
+       id="path1335" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9-2-5-4-8"
+       width="23.8125"
+       height="23.8125"
+       x="-76.729164"
+       y="185.20833"
+       ry="2.6458385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:19.4364;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="114.48316"
+       y="68.996689"
+       id="text839-9-0-7-6-8"
+       transform="translate(-178.46126,124.0475)"><tspan
+         x="114.48316"
+         y="68.996689"><tspan
+           style="text-align:center;text-anchor:middle">$Incr </tspan></tspan><tspan
+         x="114.48316"
+         y="74.264738"><tspan
+           style="text-align:center;text-anchor:middle">user </tspan></tspan><tspan
+         x="114.48316"
+         y="79.532789"><tspan
+           style="text-align:center;text-anchor:middle">attempts</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9-2-5-4-8-3"
+       width="23.8125"
+       height="23.8125"
+       x="-23.8125"
+       y="224.89583"
+       ry="2.6458385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:19.4364;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="121.47259"
+       y="68.996689"
+       id="text839-9-0-7-6-8-9"
+       transform="translate(-132.57707,166.74046)"><tspan
+         x="121.47259"
+         y="68.996689"><tspan
+           style="text-align:center;text-anchor:middle">Block </tspan></tspan><tspan
+         x="121.47259"
+         y="74.264738"><tspan
+           style="text-align:center;text-anchor:middle">acount</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="reset"
+     transform="translate(102.10115,-28.916663)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9-2-5"
+       width="23.8125"
+       height="23.8125"
+       x="31.75"
+       y="224.89583"
+       ry="2.6458385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:19.4364;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="105.2044"
+       y="68.996689"
+       id="text839-9-0-7"
+       transform="translate(-60.747054,163.64548)"><tspan
+         x="105.2044"
+         y="68.996689"><tspan
+           style="text-align:center;text-anchor:middle">Reset </tspan></tspan><tspan
+         x="105.2044"
+         y="74.264738"><tspan
+           style="text-align:center;text-anchor:middle">user </tspan></tspan><tspan
+         x="105.2044"
+         y="79.532789"><tspan
+           style="text-align:center;text-anchor:middle">attemp</tspan><tspan>t</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 43.656249,209.02083 v 15.875"
+       id="path1241" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9-2-5-9"
+       width="23.8125"
+       height="23.8125"
+       x="31.486111"
+       y="264.58334"
+       ry="2.6458385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:19.4364;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="105.2044"
+       y="68.996689"
+       id="text839-9-0-7-7"
+       transform="translate(-65.399427,206.42798)"><tspan
+         x="105.2044"
+         y="68.996689"><tspan>Send </tspan></tspan><tspan
+         x="105.2044"
+         y="74.264738"><tspan>Token</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 43.65625,248.70833 v 15.875"
+       id="path1241-9" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Compare"
+     transform="translate(102.10115,-28.916663)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9-2"
+       width="23.8125"
+       height="23.8125"
+       x="31.750002"
+       y="185.20833"
+       ry="2.6458364" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:19.4364;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="96.98027"
+       y="68.996689"
+       id="text839-9-0"
+       transform="translate(-62.872557,129.25381)"><tspan
+         x="96.98027"
+         y="68.996689"><tspan>Compare</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 31.75,79.375 H 0"
+       id="path1066" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 31.75,119.0625 H 0"
+       id="path1068" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 31.75,198.4375 H 0"
+       id="path1070" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 43.656249,52.916666 V 66.145832"
+       id="path1072" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 43.656249,89.958332 V 105.83333"
+       id="path1074" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 43.656249,129.64583 v 15.875"
+       id="path1076" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 43.656249,169.33333 v 15.875"
+       id="path1078" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 195.79166,111.125 h -31.75"
+       id="path1066-0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 251.35416,111.125 h -31.75"
+       id="path1066-0-1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Hash &amp; Salt"
+     style="display:inline"
+     transform="translate(102.10115,-28.916663)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9"
+       width="23.8125"
+       height="23.8125"
+       x="31.750002"
+       y="145.52083"
+       ry="2.6458366" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:19.4364;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="104.46358"
+       y="68.996689"
+       id="text839-9"
+       transform="translate(-60.216769,87.365462)"><tspan
+         x="104.46358"
+         y="68.996689"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.105361">Hash &amp; </tspan></tspan><tspan
+         x="104.46358"
+         y="74.264738"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.105361">Salt</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Check Attempt"
+     style="display:inline"
+     transform="translate(102.10115,-28.916663)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-0"
+       width="23.8125"
+       height="23.8125"
+       x="31.750002"
+       y="105.83333"
+       ry="2.6458366" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="64.325409"
+       y="95.455025"
+       id="text839-2"
+       transform="translate(-21.895735,18.585602)"><tspan
+         x="64.325409"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.105361">Check </tspan></tspan><tspan
+         x="64.325409"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.105361">acount </tspan></tspan><tspan
+         x="64.325409"
+         y="105.99113"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.105361">block</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Check User"
+     style="display:inline"
+     transform="translate(102.10115,-28.916663)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-0-7"
+       width="23.8125"
+       height="23.8125"
+       x="31.75"
+       y="66.145828"
+       ry="2.6458385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="63.579445"
+       y="95.455025"
+       id="text839-2-3"
+       transform="translate(-21.160962,-18.467874)"><tspan
+         x="63.579445"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">Check </tspan></tspan><tspan
+         x="63.579445"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">User</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:label="get users"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(102.10115,-28.916663)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835"
+       width="23.8125"
+       height="23.8125"
+       x="31.75"
+       y="29.104162"
+       ry="2.6458378" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="35.01263"
+       y="42.538353"
+       id="text839"><tspan
+         sodipodi:role="line"
+         id="tspan837"
+         x="35.01263"
+         y="42.538353"
+         style="stroke-width:0.105361">Get user</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="10.583333"
+       y="76.729164"
+       id="text1085"><tspan
+         sodipodi:role="line"
+         id="tspan1083"
+         x="10.583333"
+         y="76.729164"
+         style="stroke-width:0.264583" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="txt"
+     transform="translate(102.10115,-28.916663)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="66.201126"
+       y="95.455025"
+       id="text839-2-3-9"
+       transform="translate(-54.903259,-23.653441)"><tspan
+         x="66.201126"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">User not </tspan></tspan><tspan
+         x="66.201126"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">found</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="66.742332"
+       y="95.455025"
+       id="text839-2-3-9-7"
+       transform="translate(-53.478254,17.18698)"><tspan
+         x="66.742332"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">Acount is </tspan></tspan><tspan
+         x="66.742332"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">blocked</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="68.190018"
+       y="95.455025"
+       id="text839-2-3-9-7-5"
+       transform="translate(-53.497933,90.506493)"><tspan
+         x="68.190018"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">Hashed </tspan></tspan><tspan
+         x="68.190018"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">passwords </tspan></tspan><tspan
+         x="68.190018"
+         y="105.99113"><tspan
+           style="text-align:center;text-anchor:middle">not eguals</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="68.025391"
+       y="95.455025"
+       id="text839-2-3-9-7-5-8"
+       transform="translate(-105.8342,91.162865)"><tspan
+         x="68.025391"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">User </tspan></tspan><tspan
+         x="68.025391"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">attempt &lt; </tspan></tspan><tspan
+         x="68.025391"
+         y="105.99113"><tspan
+           style="text-align:center;text-anchor:middle">limit</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="68.025391"
+       y="95.455025"
+       id="text839-2-3-9-7-5-8-6"
+       transform="translate(-95.60525,116.80692)"><tspan
+         x="68.025391"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">User </tspan></tspan><tspan
+         x="68.025391"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">attempt &gt; </tspan></tspan><tspan
+         x="68.025391"
+         y="105.99113"><tspan
+           style="text-align:center;text-anchor:middle">limit</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1445"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1447);fill:#000000;fill-opacity:1;stroke:none;" />
+    <g
+       id="g1657">
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cf3535;stroke-width:0.358307;stroke-opacity:1"
+         id="path1459"
+         cx="-12.385036"
+         cy="78.85186"
+         r="12.324276" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+         x="63.579445"
+         y="95.455025"
+         id="text839-2-3-0"
+         transform="translate(-84.115297,-15.072138)"><tspan
+           x="63.579445"
+           y="95.455025"><tspan
+             style="display:inline">Res 401
+</tspan></tspan><tspan
+           x="63.579445"
+           y="100.72307"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="105.99113"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="111.25918"><tspan
+             style="display:inline">
+</tspan></tspan></text>
+    </g>
+    <g
+       id="g1657-7"
+       transform="translate(0.02686188,39.981631)">
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cf3535;stroke-width:0.358307;stroke-opacity:1"
+         id="path1459-2"
+         cx="-12.385036"
+         cy="78.85186"
+         r="12.324276" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+         x="63.579445"
+         y="95.455025"
+         id="text839-2-3-0-0"
+         transform="translate(-84.115297,-15.072138)"><tspan
+           x="63.579445"
+           y="95.455025"><tspan
+             style="display:inline">Res 401
+</tspan></tspan><tspan
+           x="63.579445"
+           y="100.72307"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="105.99113"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="111.25918"><tspan
+             style="display:inline">
+</tspan></tspan></text>
+    </g>
+    <g
+       id="g1657-1"
+       transform="translate(-77.212682,118.76703)">
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cf3535;stroke-width:0.358307;stroke-opacity:1"
+         id="path1459-1"
+         cx="-12.385036"
+         cy="78.85186"
+         r="12.324276" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+         x="63.579445"
+         y="95.455025"
+         id="text839-2-3-0-8"
+         transform="translate(-84.115297,-15.072138)"><tspan
+           x="63.579445"
+           y="95.455025"><tspan
+             style="display:inline">Res 401
+</tspan></tspan><tspan
+           x="63.579445"
+           y="100.72307"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="105.99113"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="111.25918"><tspan
+             style="display:inline">
+</tspan></tspan></text>
+    </g>
+    <g
+       id="g1657-9"
+       transform="translate(0.18803394,182.66995)">
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cf3535;stroke-width:0.358307;stroke-opacity:1"
+         id="path1459-20"
+         cx="-12.385036"
+         cy="78.85186"
+         r="12.324276" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+         x="63.579445"
+         y="95.455025"
+         id="text839-2-3-0-5"
+         transform="translate(-84.115297,-15.072138)"><tspan
+           x="63.579445"
+           y="95.455025"><tspan
+             style="display:inline">Res 401
+</tspan></tspan><tspan
+           x="63.579445"
+           y="100.72307"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="105.99113"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="111.25918"><tspan
+             style="display:inline">
+</tspan></tspan></text>
+    </g>
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#35cf4c;stroke-width:0.358307;stroke-opacity:1"
+       id="path1459-20-6"
+       cx="43.392361"
+       cy="300.9689"
+       r="12.324276" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+       x="63.579445"
+       y="95.455025"
+       id="text839-2-3-0-5-2"
+       transform="translate(-28.337901,207.04489)"><tspan
+         x="63.579445"
+         y="95.455025"><tspan
+           style="display:inline">Res 200
+</tspan></tspan><tspan
+         x="63.579445"
+         y="100.72307"><tspan
+           style="display:inline">
+</tspan></tspan><tspan
+         x="63.579445"
+         y="105.99113"><tspan
+           style="display:inline">
+</tspan></tspan><tspan
+         x="63.579445"
+         y="111.25918"><tspan
+           style="display:inline">
+</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9-2-7"
+       width="23.8125"
+       height="23.8125"
+       x="139.5144"
+       y="216.95833"
+       ry="2.6458364" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:16.1631;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="104.0551"
+       y="68.996689"
+       id="text839-9-0-76"
+       transform="translate(46.672076,156.16894)"><tspan
+         x="104.0551"
+         y="68.996689"><tspan
+           style="text-align:center;text-anchor:middle">Record </tspan></tspan><tspan
+         x="104.0551"
+         y="74.264738"><tspan
+           style="text-align:center;text-anchor:middle">new </tspan></tspan><tspan
+         x="104.0551"
+         y="79.532789"><tspan
+           style="text-align:center;text-anchor:middle">User</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 152.1354,121.70833 v 15.875"
+       id="path1074-4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 152.1354,161.39583 v 15.875"
+       id="path1076-8" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 152.1354,201.08333 v 15.875"
+       id="path1078-3" />
+    <rect
+       style="display:inline;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-9-9"
+       width="23.8125"
+       height="23.8125"
+       x="140.22916"
+       y="177.27083"
+       ry="2.6458366" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:19.4364;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="104.46358"
+       y="68.996689"
+       id="text839-9-7"
+       transform="translate(48.262378,119.11546)"><tspan
+         x="104.46358"
+         y="68.996689"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.105361">Hash &amp; </tspan></tspan><tspan
+         x="104.46358"
+         y="74.264738"><tspan
+           style="text-align:center;text-anchor:middle;stroke-width:0.105361">Salt</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-0-3"
+       width="23.8125"
+       height="23.8125"
+       x="140.22914"
+       y="137.58333"
+       ry="2.6458366" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="74.586784"
+       y="95.455025"
+       id="text839-2-4"
+       transform="translate(76.506838,49.891109)"><tspan
+         x="74.586784"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">Generate </tspan></tspan><tspan
+         x="74.586784"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">random </tspan></tspan><tspan
+         x="74.586784"
+         y="105.99113"><tspan
+           style="text-align:center;text-anchor:middle">salt string</tspan></tspan></text>
+    <rect
+       style="display:inline;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-0-7-0-7"
+       width="23.8125"
+       height="23.8125"
+       x="195.79166"
+       y="97.895836"
+       ry="2.6458385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="73.258461"
+       y="95.455025"
+       id="text839-2-3-5-3"
+       transform="translate(134.22592,10.648109)"><tspan
+         x="73.258461"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">Check </tspan></tspan><tspan
+         x="73.258461"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">Login/Ip/ </tspan></tspan><tspan
+         x="73.258461"
+         y="105.99113"><tspan
+           style="text-align:center;text-anchor:middle">Password</tspan></tspan></text>
+    <rect
+       style="display:inline;fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.374999"
+       id="rect835-0-7-0"
+       width="23.8125"
+       height="23.8125"
+       x="140.22916"
+       y="97.895836"
+       ry="2.6458385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="63.579445"
+       y="95.455025"
+       id="text839-2-3-5"
+       transform="translate(87.318187,13.282126)"><tspan
+         x="63.579445"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">Check </tspan></tspan><tspan
+         x="63.579445"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">User</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="66.201126"
+       y="95.455025"
+       id="text839-2-3-9-0"
+       transform="translate(164.70089,8.8525106)"><tspan
+         x="66.201126"
+         y="95.455025"><tspan
+           style="text-align:center;text-anchor:middle">User not </tspan></tspan><tspan
+         x="66.201126"
+         y="100.72307"><tspan
+           style="text-align:center;text-anchor:middle">found</tspan></tspan></text>
+    <g
+       id="g1657-2"
+       transform="translate(276.11159,32.316964)">
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cf3535;stroke-width:0.358307;stroke-opacity:1"
+         id="path1459-6"
+         cx="-12.385036"
+         cy="78.85186"
+         r="12.324276" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+         x="63.579445"
+         y="95.455025"
+         id="text839-2-3-0-9"
+         transform="translate(-84.115297,-15.072138)"><tspan
+           x="63.579445"
+           y="95.455025"><tspan
+             style="display:inline">Res 401
+</tspan></tspan><tspan
+           x="63.579445"
+           y="100.72307"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="105.99113"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="111.25918"><tspan
+             style="display:inline">
+</tspan></tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 207.69791,121.70833 v 15.875"
+       id="path1074-4-9" />
+    <g
+       id="g1657-2-8"
+       transform="translate(220.34762,70.721841)">
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cf3535;stroke-width:0.358307;stroke-opacity:1"
+         id="path1459-6-8"
+         cx="-12.385036"
+         cy="78.85186"
+         r="12.324276" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+         x="63.579445"
+         y="95.455025"
+         id="text839-2-3-0-9-6"
+         transform="translate(-84.115297,-15.072138)"><tspan
+           x="63.579445"
+           y="95.455025"><tspan
+             style="display:inline">Res 401
+</tspan></tspan><tspan
+           x="63.579445"
+           y="100.72307"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="105.99113"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="111.25918"><tspan
+             style="display:inline">
+</tspan></tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 207.69791,82.020834 V 97.895831"
+       id="path1074-4-9-2" />
+    <g
+       id="g1657-2-8-8"
+       transform="translate(220.15862,-9.031132)">
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cf3535;stroke-width:0.358307;stroke-opacity:1"
+         id="path1459-6-8-3"
+         cx="-12.385036"
+         cy="78.85186"
+         r="12.324276" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+         x="63.579445"
+         y="95.455025"
+         id="text839-2-3-0-9-6-0"
+         transform="translate(-84.115297,-15.072138)"><tspan
+           x="63.579445"
+           y="95.455025"><tspan
+             style="display:inline">Res 401
+</tspan></tspan><tspan
+           x="63.579445"
+           y="100.72307"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="105.99113"><tspan
+             style="display:inline">
+</tspan></tspan><tspan
+           x="63.579445"
+           y="111.25918"><tspan
+             style="display:inline">
+</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="66.201126"
+       y="95.455025"
+       id="text839-2-3-9-0-3"
+       transform="translate(143.53423,36.066797)"><tspan
+         x="66.201126"
+         y="95.455025"><tspan
+           style="display:inline">IP blocked</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361"
+       x="66.201126"
+       y="95.455025"
+       id="text839-2-3-9-0-8"
+       transform="translate(142.77828,-7.022488)"><tspan
+         x="66.201126"
+         y="95.455025"><tspan
+           style="display:inline">Password </tspan></tspan><tspan
+         x="66.201126"
+         y="100.72307"><tspan
+           style="display:inline">not valid</tspan></tspan></text>
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#35cf4c;stroke-width:0.358307;stroke-opacity:1"
+       id="path1459-20-6-8"
+       cx="151.42065"
+       cy="253.72188"
+       r="12.324276" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.21444px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:23.4051;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.105361;stroke-opacity:1"
+       x="63.579445"
+       y="95.455025"
+       id="text839-2-3-0-5-2-0"
+       transform="translate(79.385297,159.79787)"><tspan
+         x="63.579445"
+         y="95.455025"><tspan
+           style="display:inline">Res 200
+</tspan></tspan><tspan
+         x="63.579445"
+         y="100.72307"><tspan
+           style="display:inline">
+</tspan></tspan><tspan
+         x="63.579445"
+         y="105.99113"><tspan
+           style="display:inline">
+</tspan></tspan><tspan
+         x="63.579445"
+         y="111.25918"><tspan
+           style="display:inline">
+</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="res"
+     transform="translate(102.10115,-28.916663)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-68.791664"
+       y="113.77083"
+       id="text1464"><tspan
+         sodipodi:role="line"
+         id="tspan1462"
+         x="-68.791664"
+         y="113.77083"
+         style="stroke-width:0.264583" /></text>
+  </g>
+</svg>
