@@ -1,5 +1,4 @@
 import styles from './portfolio.module.sass'
-import Grid from '../utils/grid/grid.js'
 import Card from './card.js'
 
 export default function Portfolio(props){
@@ -50,11 +49,11 @@ export default function Portfolio(props){
                     Portfolio
                 </h1>
             </header>
-            <Grid nb={2} nb_responsive={1} responsive_size={700} >
+            <section className={styles.caroussel}>
 
                 {list}
 
-            </Grid>
+            </section>
 
         </section>
     </>
