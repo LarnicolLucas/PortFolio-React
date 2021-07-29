@@ -7,10 +7,11 @@
 .caroussel
     display: flex
     overflow-y: hidden
-    padding: 2rem
-    border: 1px solid #000
-    margin: 0 2rem 0 2rem
+    padding: 4rem 0 4rem 0
+    border: 1px solid #aaa
+    margin: 0 6rem 0 6rem
     border-radius: 1rem
+    box-shadow: 1pt 2pt 1rem #aaa
 .card
     flex-shrink: 0
     cursor: pointer
@@ -49,4 +50,10 @@
 .caroussel 
   -ms-overflow-style: none
   scrollbar-width: none
-
+.direction
+    margin: 0
+    position: absolute
+    width: 3rem
+    height: 3rem
+    cursor: pointer
+    align-self: center

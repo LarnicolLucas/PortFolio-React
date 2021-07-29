@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Card(props){
     return <>
         <Link href={props.link} passHref>
-            <article className={styles.card}>
+            <article className={styles.card} ref={props.refCompo}>
                 
                 <figure className={styles.figure}>
                     

@@ -1,11 +1,13 @@
 import styles from './portfolio.module.sass'
 import Card from './card.js'
+import Image from 'next/image'
+import { useRef, useState } from 'react';
 
 export default function Portfolio(props){
 
     const list = [
         {
-            id: 4,
+            id: 0,
             title: "OpenData",
             src: "/images/portfolio/producteur.png",
             description: "Data analyse from OpenData website.",
@@ -33,7 +35,7 @@ export default function Portfolio(props){
             link: "/login"
         },
         {
-            id: 0,
+            id: 4,
             title: "SPA",
             src: "/images/portfolio/institut.png",
             description: "Single Page Application for showcase site - French Beauty Institut",
@@ -41,7 +43,32 @@ export default function Portfolio(props){
         },
     
         
-    ].map(el => <Card key={el.id} src={el.src} title={el.title} description={el.description} link={el.link} />);
+    ];
+
+    const refList = list.map(el=> useRef())
+
+    const domList = list.map(el => <Card 
+        key={el.id} 
+        src={el.src} 
+        title={el.title} 
+        description={el.description} 
+        link={el.link} 
+        refCompo={refList[el.id]}
+    />);
+
+    const emptyCard = <article style={{margin: "7rem 0 0 15rem"}}></article>
+
+    const [count, setCount]= useState(0);
+
+    //const scrollView = (element) => element.scrollIntoView({behavior: "smooth"});
+    const scrollView = (direction) => {
+        const newCount = (direction * 1) + count;
+        const targetDom = refList[newCount];
+
+        if(targetDom === undefined) return
+        targetDom.current.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+        setCount(newCount);
+    };
 
     return <>
         <section className={styles.container_}>
@@ -53,7 +80,16 @@ export default function Portfolio(props){
             </header>
             <section className={styles.caroussel}>
 
-                {list}
+                {emptyCard}
+                {domList}
+                {emptyCard}
+
+                <figure className={styles.direction} style={{left: "6rem"}} onClick={()=> scrollView(-1)}>
+                    <Image src="/images/portfolio/left.svg" layout="fill" />
+                </figure>
+                <figure className={styles.direction} style={{right: "6rem"}} onClick={()=> scrollView(1)}>
+                    <Image src="/images/portfolio/right.svg" layout="fill" />
+                </figure>
 
             </section>
 
