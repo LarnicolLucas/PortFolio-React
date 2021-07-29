@@ -4,17 +4,17 @@ import Link from 'next/link'
 export default function Card(props){
     return <>
         <Link href={props.link} passHref>
-        <article className={styles.card}>
-            
-            <figure className={styles.figure}>
+            <article className={styles.card}>
                 
-                <img className={styles.img} src={props.src}/>
-                 
-            </figure>
-            <figcaption className={styles.figcaption}>
-                <p>{props.description}</p>
-            </figcaption> 
-        </article>
+                <figure className={styles.figure}>
+                    
+                    <img className={styles.img} src={props.src}/>
+                    
+                </figure>
+                <figcaption className={styles.figcaption}>
+                    <p>{props.description}</p>
+                </figcaption> 
+            </article>
         </Link>
     </>
 }

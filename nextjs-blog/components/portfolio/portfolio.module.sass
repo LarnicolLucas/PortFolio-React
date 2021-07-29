@@ -6,25 +6,47 @@
     margin: 0 0 5rem 0
 .caroussel
     display: flex
-    justify-content: center
+    overflow-y: hidden
+    padding: 2rem
+    border: 1px solid #000
+    margin: 0 2rem 0 2rem
+    border-radius: 1rem
 .card
+    flex-shrink: 0
     cursor: pointer
     position: relative
     padding: 0
-    margin: 0
+    margin: 0 2rem 0 2rem
+    border-radius: 1rem
+    box-shadow: 1rem 1rem 1rem #aaa
+    display: flex
+    justify-content: center
+    align-items: center
 .figure
+    padding: 0
     margin: 0
-    padding: 0 2rem 0 2rem
     position: relative
+    width: 20rem
+    transition: 0.2s ease-out
 .img
     border-radius: 10px
+    transition: 0.2s ease-out 
 .figcaption
     position: absolute
     font-size: 0.8rem
     text-align: center
     opacity: 0
+    transition: 0.2s ease-out 0.2s
+    transform: translateX(-1rem)
 .card:hover .figcaption
     opacity: 1
-.card:hover .figure
-    top: 0
-    left: 0
+    transform: translateX(0)
+.card:hover .img
+    transform: translate(-4rem, -4rem) scale(0.5)
+
+.caroussel::-webkit-scrollbar 
+  display: none
+.caroussel 
+  -ms-overflow-style: none
+  scrollbar-width: none
+
