@@ -8,6 +8,7 @@ import styles from './index.module.sass'
 import Skills from '../components/skills/skills.js'
 import Portfolio from '../components/portfolio/portfolio.js'
 import About from '../components/about/about'
+import ContainerMedia from '../components/socialMedia/container'
 
 export default function index(props){
 
@@ -28,6 +29,7 @@ export default function index(props){
           <Skills />
           <Portfolio />
           <About />
+          <ContainerMedia />
       </Layout>
     </>
 }
