@@ -13,6 +13,9 @@ import ContainerMedia from '../components/socialMedia/container'
 export default function index(props){
 
   const [mousePos, setMousePos] = useState([0, 0]);
+  const [zoomAbout, setZoomAbout] = useState(false);
+
+  const aboutButtonClicked = (bol)=> setZoomAbout(bol)
 
   const givePos = (e) => {
     const convert = (value) => (value/50)
@@ -22,13 +25,13 @@ export default function index(props){
   return <>
       <Layout>
           <section onMouseMove={givePos} className={styles.page}>
-            <NAV_container/>
+            <NAV_container aboutButtonClicked={aboutButtonClicked}/>
             <SVG_intro_container pos={mousePos}/>
           </section>
           <Pres/>
           <Skills />
           <Portfolio />
-          <About />
+          <About aboutButtonClicked={aboutButtonClicked} zoomAbout={zoomAbout} />
           <ContainerMedia />
       </Layout>
     </>

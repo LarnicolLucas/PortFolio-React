@@ -9,8 +9,8 @@ export default function nav_container(props){
                 <img src="/images/logo.svg" className={styles.img}/>
             </figure>
             <section className={styles.link_container}>
-                <ButLink name="Contact" />
-                <ButLink name="About" />
+                <ButLink name="Contact"/>
+                <ButLink name="About"  aboutButtonClicked={props.aboutButtonClicked} />
             </section>
         </nav>
     </>

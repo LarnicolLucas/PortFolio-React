@@ -1,8 +1,22 @@
 import styles from './about.module.sass'
+import { useRef, useEffect } from 'react'
 
 export default function Info(props){
+
+    const domContainer = useRef();
+
+    useEffect(()=> {
+
+        if(props.zoomAbout){
+            domContainer.current.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+        }
+
+        props.aboutButtonClicked(false);
+    
+    }, [props.zoomAbout])
+
     return <>
-        <section className={styles.container}>
+        <section className={styles.container} ref={domContainer}>
 
             <header>
                 <h1 className={styles.title}>About</h1>
