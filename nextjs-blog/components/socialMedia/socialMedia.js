@@ -11,7 +11,7 @@ export default function SocialMedia(props){
 
             <figure className={styles.figure}>
 
-                <SVGS class_={styles.svg} path={props.path}/>
+                <SVGS class_={styles.svg} path={props.path} viewBox={props.viewBox}/>
 
             </figure>
 
