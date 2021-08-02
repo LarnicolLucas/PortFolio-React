@@ -9,13 +9,16 @@ import Skills from '../components/skills/skills.js'
 import Portfolio from '../components/portfolio/portfolio.js'
 import About from '../components/about/about'
 import ContainerMedia from '../components/socialMedia/container'
+import Modal from '../components/modal/modal'
 
 export default function index(props){
 
   const [mousePos, setMousePos] = useState([0, 0]);
   const [zoomAbout, setZoomAbout] = useState(false);
+  const [modal, setModal] = useState(false);
 
-  const aboutButtonClicked = (bol)=> setZoomAbout(bol)
+  const aboutButtonClicked = (bol)=> setZoomAbout(bol);
+  const openModal = (bol) => setModal(bol);
 
   const givePos = (e) => {
     const convert = (value) => (value/50)
@@ -24,8 +27,9 @@ export default function index(props){
 
   return <>
       <Layout>
+        <Modal closeModal={openModal} modalState={modal}/>
           <section onMouseMove={givePos} className={styles.page}>
-            <NAV_container aboutButtonClicked={aboutButtonClicked}/>
+            <NAV_container aboutButtonClicked={aboutButtonClicked} setModal={openModal}/>
             <SVG_intro_container pos={mousePos}/>
           </section>
           <Pres/>
