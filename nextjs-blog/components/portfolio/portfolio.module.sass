@@ -30,7 +30,7 @@
     width: 20rem
     transition: 0.2s ease-out
 .img
-    border-radius: 10px
+    border-radius: 1rem
     transition: 0.2s ease-out 
 .figcaption
     position: absolute
@@ -43,7 +43,9 @@
     opacity: 1
     transform: translateX(0)
 .card:hover .img
-    transform: translate(-4rem, -4rem) scale(0.5)
+    transform: translate(-4rem, -4rem) scale(0.3) skew(10deg) rotate(10deg)
+    border-radius: 100px
+    box-shadow: -2rem 3rem 2rem #aaa
 
 .caroussel::-webkit-scrollbar 
   display: none

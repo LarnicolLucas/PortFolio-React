@@ -31,7 +31,7 @@ export default function Portfolio(props){
             id: 3,
             title: "Blog",
             src: "/images/portfolio/blog.png",
-            description: "Home Made Blog with CRUD API",
+            description: "Blog with CRUD API",
             link: "/blog"
         },
         {
