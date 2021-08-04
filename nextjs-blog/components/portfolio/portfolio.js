@@ -15,27 +15,34 @@ export default function Portfolio(props){
         },
         {
             id: 1,
+            title: "Manage App",
+            src: "/images/portfolio/manage.png",
+            description: "SandBox WEB app for store managing",
+            link: "https://manage-iota.vercel.app/"
+        },
+        {
+            id: 2,
             title: "Dashboard",
             src: "/images/portfolio/dashboard.png",
             description: "Dashboard bind with data from Data Base. Glassmorphism UI",
             link: "/dashboard"
         },
         {
-            id: 2,
+            id: 3,
             title: "Blog",
             src: "/images/portfolio/blog.png",
             description: "Home Made Blog with CRUD API",
             link: "/blog"
         },
         {
-            id: 3,
+            id: 4,
             title: "Login",
             src: "/images/portfolio/login.png",
             description: "Modular Login with BackEnd MongoDB environement.",
             link: "/login"
         },
         {
-            id: 4,
+            id: 5,
             title: "SPA",
             src: "/images/portfolio/institut.png",
             description: "Single Page Application for showcase site - French Beauty Institut",
