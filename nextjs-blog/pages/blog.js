@@ -9,6 +9,7 @@ import Main from '../components/blog/main/main.js'
 import Box from '../components/blog/main/sideNav/box/box.js'
 
 import ApiCallGet from '../components/blog/apiCallGet'
+import getStore from '../components/blog/store/read'
 
 export default function index(props){
 
@@ -45,7 +46,12 @@ export default function index(props){
     useEffect(async ()=> {
         try{
             const res = await ApiCallGet("allArticles");
-            setDatas(res);
+            const storage = getStore();
+
+            const articles = storage != null ? res.concat(storage) : res ;
+
+            setDatas(articles);
+            
         }catch(err){
             console.log(err)
         }
