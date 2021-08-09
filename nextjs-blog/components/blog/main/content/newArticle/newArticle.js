@@ -1,6 +1,7 @@
-import ApiCall from '../../../apiCallPost';
+import store from '../../../store/store'
+import getStore from '../../../store/read'
+import updateStore from '../../../store/updateStore'
 import ApiCallGet from '../../../apiCallGet';
-import ApiCallUp from '../../../apiCallUp';
 import styles from './newArticle.module.sass';
 import {useState, useEffect} from 'react'
 
@@ -55,7 +56,7 @@ export default function SideBar(props){
 
     const Create = async () => {
         try {  
-            const res = await ApiCall(dataToSend);
+            store(dataToSend)
             articlePosted();
         }catch(err){
             console.log(err)
@@ -63,7 +64,7 @@ export default function SideBar(props){
     };
     const Update = async () => {
         try {  
-            const res = await ApiCallUp(Object.assign({}, dataToSend, {_id: props.updateArticle.id}));
+            updateStore(dataToSend, props.updateArticle.id)
             articlePosted();
         }catch(err){
             console.log(err)
@@ -78,8 +79,14 @@ export default function SideBar(props){
     useEffect(async ()=> {
         if(props.updateArticle.active){
             try {  
+
+
                 const res = await ApiCallGet(props.updateArticle.id);
-                setDataToSend(res[0])
+                const storage = getStore();
+
+                const article = storage != null ? storage.filter(el => el._id == props.updateArticle.id)[0] : res[0] ;
+
+                setDataToSend(article);
 
             }catch(err){
                 console.log(err)

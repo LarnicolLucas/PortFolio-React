@@ -2,7 +2,7 @@ import styles from './readArticle.module.sass'
 import Author from '../article/author.js'
 import Link from 'next/link'
 
-import ApiCallDel from '../../../apiCallDel.js'
+import Delete from '../../../store/delete'
 
 export default function Read(props){
 
@@ -51,7 +51,7 @@ export default function Read(props){
 
     const deleteFn = async () => {
         try {
-            const res = await ApiCallDel(props.data._id);
+            Delete(props.data._id) 
             articleDeleted();
         }catch(err){
             console.log(err)
