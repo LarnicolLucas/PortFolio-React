@@ -11,6 +11,8 @@ import About from '../components/about/about'
 import ContainerMedia from '../components/socialMedia/container'
 import Modal from '../components/modal/modal'
 
+import Illustration from '../components/illustrationIntro/illustrationIntro'
+
 export default function index(props){
 
   const [mousePos, setMousePos] = useState([0, 0]);
@@ -31,6 +33,7 @@ export default function index(props){
           <section onMouseMove={givePos} className={styles.page}>
             <NAV_container aboutButtonClicked={aboutButtonClicked} setModal={openModal}/>
             <SVG_intro_container pos={mousePos}/>
+            <Illustration pos={mousePos} />
           </section>
           <Pres/>
           <Skills />

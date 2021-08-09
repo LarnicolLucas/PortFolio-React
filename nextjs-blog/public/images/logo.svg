@@ -126,7 +126,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -134,19 +134,7 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="lA"
-     style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;display:inline;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="-1.1864636"
-       y="15.632186"
-       id="text867"><tspan
-         sodipodi:role="line"
-         id="tspan865"
-         x="-1.1864636"
-         y="15.632186"
-         style="font-size:19.7556px;fill:#4d4d4d;stroke-width:0.264583">Larnicol</tspan></text>
-  </g>
+     style="display:inline" />
   <g
      inkscape:groupmode="layer"
      id="layer4"
@@ -267,17 +255,5 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="Lu"
-     style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;display:inline;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="79.424652"
-       y="58.208069"
-       id="text871"><tspan
-         sodipodi:role="line"
-         id="tspan869"
-         x="79.424652"
-         y="58.208069"
-         style="font-size:19.7556px;fill:#4d4d4d;stroke-width:0.264583">Lucas</tspan></text>
-  </g>
+     style="display:inline" />
 </svg>

@@ -80,6 +80,7 @@
        x2="116.91343"
        y2="57.500008"
        gradientUnits="userSpaceOnUse" />
+   
   </defs>
   <sodipodi:namedview
      id="base"
@@ -126,7 +127,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -145,7 +146,7 @@
          id="tspan865"
          x="-1.1864636"
          y="15.632186"
-         style="font-size:19.7556px;fill:#4d4d4d;stroke-width:0.264583">Larnicol</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#4d4d4d;stroke-width:0.264583">Larnicol</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -270,7 +271,7 @@
      style="display:none">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;display:inline;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:inherit;display:inline;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="79.424652"
        y="58.208069"
        id="text871"><tspan
